@@ -25,13 +25,16 @@ $(document).ready(function () {
         seconds%=60; //Calculating remaining seconds
 
         seconds = (seconds<10) ? "0" + seconds : seconds;
+        hours = (hours<10) ? "0" + hours : hours;
         days = (days<10) ? "0" + days : days;
 
         //Replace text of html
         document.getElementById("days").textContent = days;
+        document.getElementById("hours").textContent = hours;
         document.getElementById("seconds").textContent = seconds;
         //for IE8 and below
         document.getElementById("days").innerText = days;
+        document.getElementById("hours").textContent = hours;
         document.getElementById("seconds").innerText = seconds;
         //Update everyt second
         setTimeout(countdown, 1000);

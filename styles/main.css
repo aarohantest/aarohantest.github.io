@@ -1554,6 +1554,13 @@ html.fp-enabled,
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 html, body {
     height: 100%;
     width: 100%;
@@ -1611,7 +1618,7 @@ a{
 }
 #social_media_icons ul li {
     display: inline;
-    padding-right: 5px; 
+    padding-right: 5px;
 }
 #social_media_icons ul, #connect {
     padding-bottom: 10px;
@@ -1651,7 +1658,7 @@ a{
 #nav_bar ul li {
     display: inline;
     padding-right: 13px;
-    padding-left: 13px; 
+    padding-left: 13px;
 }
 #nav_bar ul {
     padding-top: 25px;
@@ -1698,7 +1705,7 @@ a{
 #countdown ul li {
     display: inline;
     padding-right: 13px;
-    padding-left: 13px; 
+    padding-left: 13px;
 }
 #countdown ul {
     padding-bottom: 25px;
@@ -1718,7 +1725,7 @@ a{
 }
 #about_content {
     width: 100%;
-    height: 80%;
+    height: 100%;
     overflow-y: auto;
     overflow-x: hidden;
     position: relative;
@@ -1749,5 +1756,164 @@ a{
     font-size: 120%;
     -webkit-font-smoothing: subpixel-antialiased!important;
     font-weight: 250;
+}
+#content {
+    width: 90%;
+    margin: 0 auto 1%;
+}
+#content #head {
+    font-family: 'rock_saltregular';
+    font-size: 40px;
+    -webkit-font-smoothing: subpixel-antialiased!important;
+    font-weight: 600;
+    margin-bottom:  25px;
+}
+#content p {
+    font-family: 'Century Gothic';
+    font-size: 25px;
+    -webkit-font-smoothing: subpixel-antialiased!important;
+    font-weight: 300;
+    height: 30%;
+    margin-bottom:  4%;
+}
+#my_svg {
+    position: relative;
+}
+#my_svg svg {
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 0;
+    margin: 0 auto 3%;
+}
+/*#my_svg img {
+    position: relative;
+    z-index: 10;
+}
+#my_svg #medal {
+    position: absolute;
+    top: 33%;
+    right: 8%;
+}
+#my_svg #dance {
+    position: absolute;
+    top: 33%;
+    right: 43%;
+}
+#my_svg #hat {
+    position: absolute;
+    top: 61%;
+    left: 42%;
+}
+#my_svg #globe {
+    position: absolute;
+    top: 48%;
+    left: 6%;
+}
+#my_svg #globein {
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+}*/
+#my_svg #line2 {
+    font-family: 'Century Gothic';
+    font-size: 25px;
+    -webkit-font-smoothing: subpixel-antialiased!important;
+}
+#wrapper_circles {
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out; /* Safari */
+    -moz-transition: all 0.4s ease-in-out; /* Mozilla */
+    -o-transition: all 0.4s ease-in-out; /* Opera */
+    transition: all 0.4s ease-in-out;
+}
+#wrapper_circles #wrapper_content {
+    text-align: center;
+}
+#wrapper_circles>#wrapper_content>div {
+    display: inline-block;
+    margin-right: 18px;
+    margin-left: 9px;
+    margin-top: 20px;
+    text-align: center;
+}
+#wrapper_circles>div>div {
+    display: block;
+}
+
+#circle1 canvas {
+    background: url("../images/crowd.png") no-repeat center center;
+    background-size: 40% auto;
+}
+#circle2 canvas {
+    background: url("../images/dance.png") no-repeat center center;
+    background-size: 35% auto;
+}
+#circle3 canvas {
+    background: url("../images/hat.png") no-repeat center center;
+    background-size: 50% auto;
+}
+#circle4 canvas {
+    background: url("../images/medal.png") no-repeat center center;
+    background-size: 25% auto;
+}
+#circle5 canvas {
+    background: url("../images/globe.png") no-repeat center center;
+    background-size: 50% auto;
+}
+#asset_wrapper {
+    width: 46%;
+    position: relative;
+    bottom: -20px;
+    right: 0px;
+    float: right;
+    z-index: 10; /* Added this as mcustomscrollbar was removing a tags and it was below #about_content */
+    font-family: 'rock_saltregular';
+    font-size:25px;
+    -webkit-font-smoothing: subpixel-antialiased!important;
+    font-weight: 600;
+    margin-bottom: 13%;
+}
+#asset_wrapper a {
+    width: 35%;
+    font-family: 'rock_saltregular';
+    font-size: 25px;
+    -webkit-font-smoothing: subpixel-antialiased!important;
+    border: 3px solid #000;
+    border-radius: 5%;
+    padding: 10px;
+    display: inline-block;
+    color: black;
+}
+#asset_wrapper i {
+    display: inline-block;
+}
+#asset_wrapper ul li {
+    display: inline;
+    padding-left: 13px;
+}
+#asset_wrapper ul {
+    padding-top: 25px;
+    padding-right: 5px;
+}
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  margin-right: 10px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.fa-lg {
+    font-size: 1.33333333em;
+    line-height: 0.75em;
+    vertical-align: -15%;
+}
+.fa-file-pdf-o:before {
+    content: "\f1c1";
+}
+.fa-video-camera:before {
+  content: "\f03d";
 }
 

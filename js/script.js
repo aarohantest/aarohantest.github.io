@@ -8,7 +8,7 @@ $(document).ready(function () {
         var now = new Date();
         //Get current and event time in milliseconds
         var currentTime = now.getTime();
-        var eventTime = eventDate.getTime(); 
+        var eventTime = eventDate.getTime();
 
         var remTime = eventTime - currentTime; //Calculate remaining time in milliseconds
         //Calculate denominations
@@ -36,7 +36,9 @@ $(document).ready(function () {
     }
     countdown();
     var $firstLine = $('#first_line');
-    var $window = $('window');
+    var $secondLine = $('#second_line');
+    var $secondLine = $('#third_line');
+    var $about_content = $('#about_content');
     $('#about').click(function () {
         /*var cssVar = $('#first_line').css('opacity');
         if (cssVar == "1") {
@@ -69,6 +71,36 @@ $(document).ready(function () {
             console.log("hi");
         }
     });*/
-
+    var myVar = setInterval(myTimer, 1000);
+	function myTimer() {
+	    var boo = $('#wrapper_circles').isOnScreen(1, 0.6);
+		if(boo) {
+            $("#wrapper_circles").css({
+                'opacity' : '1'
+            });
+            $('.Count').each(function () {
+                var $this = $(this);
+                jQuery({ Counter: 0 }).animate({ Counter: $this.text() }, {
+                    duration: 2000,
+                    easing: 'swing',
+                    step: function () {
+                        $this.text(Math.ceil(this.Counter));
+                    }
+                });
+            });
+            var $elems = [$("#circle1"),$("#circle2"),$("#circle3"),$("#circle4"),$("#circle5")];
+            $.each($elems, function () {
+                $(this).circleProgress({
+                    value: 12000/20000,
+                    size: 205,
+                    thickness: 8,
+                    startAngle: -Math.PI / 4 * 2,
+                    fill: {
+                        color: "#A60000"
+                    }
+                });
+            });
+			clearInterval(myVar);
+		}
+	  }
 });
-

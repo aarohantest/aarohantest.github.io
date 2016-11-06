@@ -1984,15 +1984,7 @@ a{
     -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
 }
 /* Disable grayscale on hover */
-#social_media_icons img#facebook:hover {
-  filter: none;
-  -webkit-filter: grayscale(0);
-}
-#social_media_icons img#instagram:hover {
-  filter: none;
-  -webkit-filter: grayscale(0);
-}
-#social_media_icons img#youtube:hover {
+#social_media_icons img:hover {
   filter: none;
   -webkit-filter: grayscale(0);
 }
@@ -2399,8 +2391,8 @@ a{
     font-family: 'rock_saltregular';
     font-size: 20px;
     -webkit-font-smoothing: subpixel-antialiased!important;
-    font-weight: 300;
-    color: #CCCCCC;
+    font-weight: 250;
+    color: #000;
     display: block;
 }
 #contact_form #name {
@@ -2424,11 +2416,36 @@ a{
     width: 65%;
     height: 50%;
 }
+#contact_form #send {
+    font-family: 'rock_saltregular';
+    font-size: 25px;
+    -webkit-font-smoothing: subpixel-antialiased!important;
+    font-weight: 250;
+    background: none;
+    border: 3px solid #000;
+    border-radius: 5%;
+    height: 50px;
+    width: 120px;
+    line-height: 10px;
+    position: absolute;
+    left: 20%;
+    bottom: 0;
+    cursor: pointer;
+    -webkit-transition: all 0.2s ease-in-out; /* Safari */
+    -moz-transition: all 0.2s ease-in-out; /* Mozilla */
+    -o-transition: all 0.2s ease-in-out; /* Opera */
+    transition: all 0.2s ease-in-out;
+}
+#contact_form #send:hover {
+    background-color: #A60000;
+    color: #FFF;
+    border: 3px solid #A60000;
+}
 #contact_form #name:focus , #contact_form #email:focus, #contact_form #message:focus {
     font-family: 'Century Gothic';
     font-size: 25px;
     -webkit-font-smoothing: subpixel-antialiased!important;
-    font-weight: 300;
+    font-weight: 250;
 }
 input:focus::-webkit-input-placeholder { color:transparent; }
 input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
@@ -2439,4 +2456,82 @@ textarea:focus::-webkit-input-placeholder { color:transparent; }
 textarea:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
 textarea:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
 textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+
+#connect_with_us #social_media_icons {
+    left: 0;
+    margin-left: 15px;
+}
+#connect_with_us #social_media_icons ul {
+    margin-top: 20px;
+}
+#connect_with_us #social_media_icons h2 {
+    font-family: 'rock_saltregular';
+    font-size: 20px;
+    -webkit-font-smoothing: subpixel-antialiased!important;
+    font-weight: 600;
+}
+/* Styling the tooltip */
+#connect_with_us #whatsapp_tooltip {
+    position: absolute;;
+    left: 23%;
+    top: 87%;
+    display: inline-block;
+    border-bottom: 1px dotted #000;
+}
+#connect_with_us #whatsapp_tooltip #tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color:  #555;
+    color: #FFF;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    left: 5%;
+    bottom: 125%;
+    /*margin-left: -60px;*/
+    opacity: 0;
+    -webkit-transition: all 0.2s ease-in-out; /* Safari */
+    -moz-transition: all 0.2s ease-in-out; /* Mozilla */
+    -o-transition: all 0.2s ease-in-out; /* Opera */
+    transition: all 0.2s ease-in-out;
+}
+#connect_with_us #whatsapp_tooltip #tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+#connect_with_us #whatsapp_tooltip:hover ~ #tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+#contact_details {
+    position: absolute;
+    top: 40%;
+    margin-left: 15px;
+    line-height: 20px;
+    /*text-shadow: 0 0 10px #ccc;*/
+}
+#contact_details h2 {
+    font-family: 'rock_saltregular';
+    font-size: 15px;
+    -webkit-font-smoothing: subpixel-antialiased!important;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+#contact_details p {
+    font-family: 'Century Gothic';
+    font-size: 15px;
+    -webkit-font-smoothing: subpixel-antialiased!important;
+    font-weight: 300;
+}
+#contact_details span {
+    margin: 0 10px;
+}
 

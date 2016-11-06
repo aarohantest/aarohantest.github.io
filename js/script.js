@@ -1,6 +1,8 @@
 $(document).ready(function () {
-    $("#about_content").mCustomScrollbar({
-        theme: "dark-2"
+    $.each([$("#about_content"),$("#message")], function () {
+        $(this).mCustomScrollbar({
+            theme: "dark-2"
+        });
     });
 
     function countdown() {
@@ -119,6 +121,17 @@ $(document).ready(function () {
                 tNext: 'Next (Right arrow key)', // title for right button
                 tCounter: '<span class="mfp-counter">%curr% of %total%</span>' // markup of counter
             }
+        });
+    });
+    $("#whatsapp").hover(function () {
+        $("#tooltiptext").css({
+            'visibility':'visible',
+            'opacity':'1'
+        });
+    }, function () {
+        $("#tooltiptext").css({
+            'visibility':'hidden',
+            'opacity':'0'
         });
     });
 });

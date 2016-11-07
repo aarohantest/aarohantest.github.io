@@ -2348,13 +2348,13 @@ a{
     transform: rotate(5deg);
 }
 .place4 {
-    left: 35%;
+    left: 23%;
     top: 45%;
     -webkit-transform: rotate(5deg);
     transform: rotate(5deg);
 }
 .place5 {
-    left: 60%;
+    left: 55%;
     top: 50%;
     -webkit-transform: rotate(-5deg);
     transform: rotate(-5deg);
@@ -2441,12 +2441,12 @@ a{
     color: #FFF;
     border: 3px solid #A60000;
 }
-#contact_form #name:focus , #contact_form #email:focus, #contact_form #message:focus {
+/*#contact_form #name:focus , #contact_form #email:focus, #contact_form #message:focus {
     font-family: 'Century Gothic';
     font-size: 25px;
     -webkit-font-smoothing: subpixel-antialiased!important;
     font-weight: 250;
-}
+}*/
 input:focus::-webkit-input-placeholder { color:transparent; }
 input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
 input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
@@ -2473,8 +2473,8 @@ textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
 /* Styling the tooltip */
 #connect_with_us #whatsapp_tooltip {
     position: absolute;;
-    left: 23%;
-    top: 87%;
+    left: 18%;
+    top: 88%;
     display: inline-block;
     border-bottom: 1px dotted #000;
 }

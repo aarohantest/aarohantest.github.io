@@ -1994,9 +1994,9 @@ a{
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 10; /* Added this as mcustomscrollbar was removing a tags and it was below #about_content */
+    z-index: 10; /* Added this as mcustomscrollbar was removing a tag and it was below #about_content */
     font-family: 'rock_saltregular';
-    font-size:25px;
+    font-size: 16px;
     -webkit-font-smoothing: subpixel-antialiased!important;
     font-weight: 600;
 }
@@ -2011,7 +2011,7 @@ a{
 }
 #nav_bar a {
     display: inline-block;
-    color: black;
+    color: #000;
 }
 /* Navigation bar hover effect */
 #nav_bar a:hover {
@@ -2074,7 +2074,7 @@ a{
     overflow-y: auto;
     overflow-x: hidden;
     position: relative;
-    margin-top: 20%;
+    margin-top: 10%;
 }
 #about_content #first_line {
     width: 13%;
@@ -2098,7 +2098,7 @@ a{
 }
 #about_content #line2 {
     font-family: 'Arial black';
-    font-size: 120%;
+    font-size: 122%;
     -webkit-font-smoothing: subpixel-antialiased!important;
     font-weight: 250;
 }
@@ -2218,7 +2218,7 @@ a{
     font-size:25px;
     -webkit-font-smoothing: subpixel-antialiased!important;
     font-weight: 600;
-    margin-bottom: 13%;
+    margin-bottom: 10%;
 }
 #asset_wrapper a {
     width: 238px;
@@ -2471,14 +2471,14 @@ textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
     font-weight: 600;
 }
 /* Styling the tooltip */
-#connect_with_us #whatsapp_tooltip {
+#whatsapp_tooltip {
     position: absolute;;
     left: 18%;
     top: 88%;
     display: inline-block;
     border-bottom: 1px dotted #000;
 }
-#connect_with_us #whatsapp_tooltip #tooltiptext {
+#tooltiptext {
     visibility: hidden;
     width: 120px;
     background-color:  #555;
@@ -2497,7 +2497,7 @@ textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
     -o-transition: all 0.2s ease-in-out; /* Opera */
     transition: all 0.2s ease-in-out;
 }
-#connect_with_us #whatsapp_tooltip #tooltiptext::after {
+#tooltiptext::after {
     content: "";
     position: absolute;
     top: 100%;
@@ -2507,10 +2507,20 @@ textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
     border-style: solid;
     border-color: #555 transparent transparent transparent;
 }
-#connect_with_us #whatsapp_tooltip:hover ~ #tooltiptext {
+#connect_with_us #tooltiptext::after {
+    left: 10%;
+}
+#whatsapp_tooltip:hover ~ #tooltiptext {
     visibility: visible;
     opacity: 1;
 }
+/* Styling hero section tooltip */
+.hero_section #whatsapp_tooltip {
+    right: 9%;
+    left: auto;
+    top: 88%;
+}
+/* Styling contact form */
 #contact_details {
     position: absolute;
     top: 40%;
@@ -2533,5 +2543,17 @@ textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
 }
 #contact_details span {
     margin: 0 10px;
+}
+/* Styling Social cause section */
+.socialcause {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+/* Styling competions section */
+.competitions {
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 

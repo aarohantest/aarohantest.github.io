@@ -52,8 +52,58 @@ $(document).ready(function () {
             $firstLine.css({
                 'opacity' : '1'
             });
+            // $(".au").css({
+            //     "color": "#663333"
+            // });
+            // $(".h").css({
+            //     "color": "#000"
+            // });
+            // $(".tb").css({
+            //     "color": "#000"
+            // });
+            // $(".cu").css({
+            //     "color": "#000"
+            // });
+
+            // $('.h').parent().css({"background-color": "none"});
+            // $('.au').parent().css({"background-color": "#F5F5DC"});
+            // $('.tb').parent().css({"background-color": "none"});
+            // $('.cu').parent().css({"background-color": "none"});
         //}
     });
+    // $('.h').click(function () {
+    //         $(".au").css({"color": "#000"});
+    //         $(".h").css({"color": "#663333"});
+    //         $(".tb").css({"color": "#000"});
+    //         $(".cu").css({"color": "#000"});
+    //
+    //         $('.h').parent().css({"background-color": "#F5F5DC"});
+    //         $('.au').parent().css({"background-color": "#FFF"});
+    //         $('.tb').parent().css({"background-color": "none"});
+    //         $('.cu').parent().css({"background-color": "none"});
+    // });
+    // $('.tb').click(function () {
+    //         $(".au").css({"color": "#000"});
+    //         $(".h").css({"color": "#000"});
+    //         $(".tb").css({"color": "#663333"});
+    //         $(".cu").css({"color": "#000"});
+    //
+    //         $('.h').parent().css({"background-color": "none"});
+    //         $('.au').parent().css({"background-color": "none"});
+    //         $('.tb').parent().css({"background-color": "#F5F5DC"});
+    //         $('.cu').parent().css({"background-color": "none"});
+    // });
+    // $('.cu').click(function () {
+    //         $(".au").css({"color": "#000"});
+    //         $(".h").css({"color": "#000"});
+    //         $(".tb").css({"color": "#000"});
+    //         $(".cu").css({"color": "#663333"});
+    //
+    //         $('.h').parent().css({"background-color": "none"});
+    //         $('.au').parent().css({"background-color": "none"});
+    //         $('.tb').parent().css({"background-color": "none"});
+    //         $('.cu').parent().css({"background-color": "#F5F5DC"});
+    // });
 
     /*$('#nav_bar ul li a').click(function () {
         var window_height = $window.height();
@@ -73,7 +123,24 @@ $(document).ready(function () {
             console.log("hi");
         }
     });*/
-
+    // var mynav = setInterval(myNav, 1000);
+    // function myNav() {
+    //     var $bar = [$(".hero_section"),$(".about_us"),$(".throwback"),$("contact_us")];
+    //     $.each($bar, function () {
+    //         var bool = $(this).isOnScreen(0.1,0.1);
+    //         console.log(bool);
+    //         if(bool) {
+    //             $("#nav_bar a").each(function () {
+    //                 if($(this).attr("href") == window.location.href.slice(22)) {
+    //                     console.log("hi");
+    //                     $(this).css({
+    //                         "color": "#FFF"
+    //                     });
+    //                 }
+    //             });
+    //         }
+    //     });
+    // }
     var myVar = setInterval(myTimer, 1000);
 	function myTimer() {
 	    var boo = $('#wrapper_circles').isOnScreen(1, 0.2);
@@ -81,6 +148,7 @@ $(document).ready(function () {
             $("#wrapper_circles").css({
                 'opacity' : '1'
             });
+
             $('.Count').each(function () {
                 var $this = $(this);
                 jQuery({ Counter: 0 }).animate({ Counter: $this.text() }, {
@@ -123,13 +191,32 @@ $(document).ready(function () {
             }
         });
     });
-    $("#whatsapp").hover(function () {
-        $("#tooltiptext").css({
+    $("#after_movie").magnificPopup({
+        items: [
+            {
+                src: 'https://www.youtube.com/embed/KDuOECrlBYs',
+                type: 'iframe' // this overrides default type
+            }
+        ],
+    });
+    $(".hero_section #whatsapp").hover(function () {
+        $(".hero_section #tooltiptext").css({
             'visibility':'visible',
             'opacity':'1'
         });
     }, function () {
-        $("#tooltiptext").css({
+        $(".hero_section #tooltiptext").css({
+            'visibility':'hidden',
+            'opacity':'0'
+        });
+    });
+    $("#connect_with_us #whatsapp").hover(function () {
+        $("#connect_with_us #tooltiptext").css({
+            'visibility':'visible',
+            'opacity':'1'
+        });
+    }, function () {
+        $("#connect_with_us #tooltiptext").css({
             'visibility':'hidden',
             'opacity':'0'
         });

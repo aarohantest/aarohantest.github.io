@@ -221,4 +221,36 @@ $(document).ready(function () {
             'opacity':'0'
         });
     });
+    $(".co").click(function () {
+        new Vivus("acting", {
+                duration: 400,
+                delay: 300,
+                start: "inViewport",
+                pathTimingFunction: Vivus.EASE_OUT,
+                animTimingFunction: Vivus.EASE_OUT
+            }, function () {
+                $("#acting path").attr("fill","#000");
+            });
+            new Vivus("langaming", {
+                    duration: 2000,
+                    delay: 300,
+                    start: "inViewport",
+                    pathTimingFunction: Vivus.EASE_OUT,
+                    animTimingFunction: Vivus.EASE_OUT
+                }, function () {
+                    $("#acting path").attr("fill","#000");
+            });
+            new Vivus("football", {
+                    duration: 2000,
+                    delay: 300,
+                    start: "inViewport",
+                    pathTimingFunction: Vivus.EASE_OUT,
+                    animTimingFunction: Vivus.EASE_OUT
+                }, function () {
+                    $("#acting path").attr("fill","#000");
+            });
+    });
+});
+$(window).load(function () {
+    $(".preloader").delay(2000).fadeOut("slow");
 });

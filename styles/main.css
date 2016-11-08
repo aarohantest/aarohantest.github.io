@@ -1924,6 +1924,23 @@ a{
     font-size: inherit;
     color: black;
 }
+/*  Styling the preloader  */
+.preloader {
+    position: fixed;
+    background-color: #FFF;
+    z-index: 99999;
+    width: 100%;
+    height: 100%;
+}
+.preloader .item {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
 /* Vertical and horizontal lines */
 #vertical {
     position: absolute;
@@ -2121,7 +2138,7 @@ a{
     height: 30%;
     margin-bottom:  4%;
 }
-#my_svg {
+/*#my_svg {
     position: relative;
 }
 #my_svg svg {
@@ -2131,7 +2148,7 @@ a{
     z-index: 0;
     margin: 0 auto 3%;
 }
-/*#my_svg img {
+#my_svg img {
     position: relative;
     z-index: 10;
 }
@@ -2389,7 +2406,7 @@ a{
     background: none;
     border: none;
     font-family: 'rock_saltregular';
-    font-size: 20px;
+    font-size: 17px;
     -webkit-font-smoothing: subpixel-antialiased!important;
     font-weight: 250;
     color: #000;
@@ -2398,14 +2415,14 @@ a{
 #contact_form #name {
     position: relative;
     left: 32%;
-    top: 0;
+    top: 2px;
     width: 53%;
     height: 10%;
 }
 #contact_form #email {
     position: relative;
     left: 16%;
-    top: 5%;
+    top: 6%;
     width: 75%;
     height: 10%;
 }
@@ -2555,5 +2572,14 @@ textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
     position: relative;
     width: 100%;
     height: 100%;
+    /*background: url("../images/hero_bg.png") no-repeat center bottom;
+    background-size: cover;*/
+}
+#acting path {
+    fill: none;
+    -webkit-transition: fill 0.2s ease-in-out; /* Safari */
+    -moz-transition: fill 0.2s ease-in-out; /* Mozilla */
+    -o-transition: fill 0.2s ease-in-out; /* Opera */
+    transition: fill 0.2s ease-in-out;
 }
 

@@ -2567,19 +2567,55 @@ textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
     width: 100%;
     height: 100%;
 }
+/* Styling social cause section */
+.socialcause {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url("../images/socialcause_bg.png") no-repeat center bottom;
+    background-size: cover;
+}
+#social_content {
+    width: 60%;
+    position: absolute;
+    bottom: 0;
+    margin-left: 15px;
+}
+#social_content #head {
+    font-family: 'rock_saltregular';
+    font-size: 30px;
+    -webkit-font-smoothing: subpixel-antialiased!important;
+    font-weight: 600;
+    margin-bottom:  20px;
+    display: block;
+}
+#social_content p {
+    font-family: 'Century Gothic';
+    font-size: 20px;
+    -webkit-font-smoothing: subpixel-antialiased!important;
+    font-weight: 300;
+    margin-bottom:  2%;
+}
 /* Styling competions section */
 .competitions {
     position: relative;
     width: 100%;
     height: 100%;
-    /*background: url("../images/hero_bg.png") no-repeat center bottom;
-    background-size: cover;*/
+    background: url("../images/hero_bg.png") no-repeat center bottom;
+    background-size: cover;
 }
 #acting path {
     fill: none;
-    -webkit-transition: fill 0.2s ease-in-out; /* Safari */
-    -moz-transition: fill 0.2s ease-in-out; /* Mozilla */
-    -o-transition: fill 0.2s ease-in-out; /* Opera */
-    transition: fill 0.2s ease-in-out;
+    -webkit-transition: fill 0.3s ease-in-out; /* Safari */
+    -moz-transition: fill 0.3s ease-in-out; /* Mozilla */
+    -o-transition: fill 0.3s ease-in-out; /* Opera */
+    transition: fill 0.3s ease-in-out;
+}
+#acting:hover path {
+    fill: #000;
+    -webkit-transition: fill 0.3s ease-in-out; /* Safari */
+    -moz-transition: fill 0.3s ease-in-out; /* Mozilla */
+    -o-transition: fill 0.3s ease-in-out; /* Opera */
+    transition: fill 0.3s ease-in-out;
 }
 

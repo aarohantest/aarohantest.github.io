@@ -191,14 +191,14 @@ $(document).ready(function () {
             }
         });
     });
-    $("#after_movie").magnificPopup({
-        items: [
-            {
-                src: 'https://www.youtube.com/embed/KDuOECrlBYs',
-                type: 'iframe' // this overrides default type
-            }
-        ],
-    });
+    // $("#after_movie").magnificPopup({
+    //     items: [
+    //         {
+    //             src: 'https://www.youtube.com/embed/KDuOECrlBYs',
+    //             type: 'iframe' // this overrides default type
+    //         }
+    //     ],
+    // });
     $(".hero_section #whatsapp").hover(function () {
         $(".hero_section #tooltiptext").css({
             'visibility':'visible',
@@ -232,15 +232,6 @@ $(document).ready(function () {
                 $("#acting path").attr("fill","#000");
             });
             new Vivus("langaming", {
-                    duration: 2000,
-                    delay: 300,
-                    start: "inViewport",
-                    pathTimingFunction: Vivus.EASE_OUT,
-                    animTimingFunction: Vivus.EASE_OUT
-                }, function () {
-                    $("#acting path").attr("fill","#000");
-            });
-            new Vivus("football", {
                     duration: 2000,
                     delay: 300,
                     start: "inViewport",

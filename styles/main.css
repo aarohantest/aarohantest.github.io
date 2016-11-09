@@ -2601,21 +2601,110 @@ textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
     position: relative;
     width: 100%;
     height: 100%;
-    background: url("../images/hero_bg.png") no-repeat center bottom;
+    background: url("../images/competitions_bg.png") no-repeat center bottom;
     background-size: cover;
+}
+#slab_container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+#slab_row1 {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    -webkit-transform: translate(-50%,0);
+    transform: translate(-50%,0);
+    width: 90%;
+}
+#slab_row2 {
+    position: absolute;
+    bottom: 20px;
+    width: 90%;
+    left: 50%;
+    -webkit-transform: translate(-50%,0);
+    transform: translate(-50%,0);
+}
+#acting_slab, #sports_slab {
+    float: left;
+}
+#dance_slab, #finearts_slab {
+    float: right;
+}
+#langaming_slab, #online_slab {
+    margin-left: 22%;
+}
+#acting {
+    position: relative;
+    left: 5%;
+    top: -8%;
+}
+#langaming {
+    position: relative;
+    left: -5%;
+    top: -4%;
 }
 #acting path {
     fill: none;
-    -webkit-transition: fill 0.3s ease-in-out; /* Safari */
-    -moz-transition: fill 0.3s ease-in-out; /* Mozilla */
-    -o-transition: fill 0.3s ease-in-out; /* Opera */
-    transition: fill 0.3s ease-in-out;
 }
-#acting:hover path {
-    fill: #000;
-    -webkit-transition: fill 0.3s ease-in-out; /* Safari */
-    -moz-transition: fill 0.3s ease-in-out; /* Mozilla */
-    -o-transition: fill 0.3s ease-in-out; /* Opera */
-    transition: fill 0.3s ease-in-out;
+#langaming path {
+    fill: none;
+}
+#acting_slab:hover>svg path {
+    fill: #A60000;
+    stroke: #A60000;
+}
+#langaming_slab:hover>svg path {
+    fill: #A60000;
+    stroke: #A60000;
+}
+#acting_slab {
+    width: 229px;
+    height: 234px;
+    cursor: pointer;
+    background: url("../images/svg_acting_bg.png") no-repeat center bottom;
+    background-size: contain;
+    display: inline-block;
+}
+#langaming_slab {
+    width: 229px;
+    height: 234px;
+    cursor: pointer;
+    background: url("../images/svg_langaming_bg.png") no-repeat center bottom;
+    background-size: contain;
+    display: inline-block;
+}
+#dance_slab {
+    width: 229px;
+    height: 234px;
+    cursor: pointer;
+    background: url("../images/svg_dance_bg.png") no-repeat center bottom;
+    background-size: contain;
+    display: inline-block;
+}
+#sports_slab {
+    width: 229px;
+    height: 234px;
+    cursor: pointer;
+    background: url("../images/svg_sports_bg.png") no-repeat center bottom;
+    background-size: contain;
+    display: inline-block;
+}
+#online_slab {
+    width: 229px;
+    height: 234px;
+    cursor: pointer;
+    background: url("../images/svg_online_bg.png") no-repeat center bottom;
+    background-size: contain;
+    display: inline-block;
+}
+#finearts_slab {
+    width: 229px;
+    height: 234px;
+    cursor: pointer;
+    background: url("../images/svg_finearts_bg.png") no-repeat center bottom;
+    background-size: contain;
+    display: inline-block;
 }
 

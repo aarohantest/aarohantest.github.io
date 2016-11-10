@@ -191,6 +191,159 @@ $(document).ready(function () {
             }
         });
     });
+    $("#acting_slab").magnificPopup({
+        items: [
+            {
+                src: $("<div id='acting_content'> \
+                                <div id='competitions_content'>\
+                                    <span id='head'>Dramatics</span>\
+                                    <p>Drama is the specific mode of fiction represented in performance.It is a loud and larger than life exchange of ideologies, catchy songs, humour, energy, emotions and the roar of audience.Drama as a form of communication is deeply rooted in the Indian tradition.This year come and showcase your talent and move the audience.</p>\
+                                    <div id='competitions_list'>\
+                                        <div>\
+                                            <div><span id='head'>Dastaak</span><p>Street play competition</p></div>\
+                                            <div><span id='head'>Mad Ads</span><p>Solo acting competition</p></div>\
+                                            <div><span id='head'>PLatform</span><p>Talent hunt competition</p></div>\
+                                        </ul>\
+                                    </div>\
+                                    <p>Details will be updated soon.</p>\
+                                    <div id='social_media_icons'>\
+                                        <ul>\
+                                            <li id='facebook'><a href='https://www.facebook.com/aarohanfest/' target='_blank'><img src='images/facebook_icon.png' alt='https://www.facebook.com/aarohanfest/'></a></li>\
+                                            <li id='instagram'><a href='https://www.instagram.com/mitaarohanfest/' target='_blank'><img src='images/instagram_icon.png' alt='https://www.facebook.com/aarohanfest/'></a></li>\
+                                        </ul>\
+                                </div>\
+                            </div>"),
+                type: 'inline'
+            }
+        ]
+    });
+    $("#langaming_slab").magnificPopup({
+        items: [
+            {
+                src: $("<div id='acting_content'> \
+                                <div id='competitions_content'>\
+                                    <span id='head'>Lan Gaming</span>\
+                                    <p>“I don’t need to get a life, I’m a gamer, I have lots of lives!”.The ultimate gaming arena! Escape the reality and land into the virtual world of survival. Team up! Push yourself further than you have ever before to see the face of your next nemesis.</p>\
+                                    <div id='competitions_list'>\
+                                        <div>\
+                                            <div><span id='head'>Dota 2</span><p>Group competition</p></div>\
+                                            <div><span id='head'>Counter Strike</span><p>Group competition</p></div>\
+                                            <div><span id='head'>Fifa 2015</span><p>Solo competition</p></div>\
+                                        </ul>\
+                                    </div>\
+                                    <p>Details will be updated soon.</p>\
+                                    <div id='social_media_icons'>\
+                                        <ul>\
+                                            <li id='facebook'><a href='https://www.facebook.com/aarohanfest/' target='_blank'><img src='images/facebook_icon.png' alt='https://www.facebook.com/aarohanfest/'></a></li>\
+                                            <li id='instagram'><a href='https://www.instagram.com/mitaarohanfest/' target='_blank'><img src='images/instagram_icon.png' alt='https://www.facebook.com/aarohanfest/'></a></li>\
+                                        </ul>\
+                                </div>\
+                            </div>"),
+                type: 'inline'
+            }
+        ]
+    });
+    $("#dance_slab").magnificPopup({
+        items: [
+            {
+                src: $("<div id='acting_content'> \
+                                <div id='competitions_content'>\
+                                    <span id='head'>Dance</span>\
+                                    <p>Dance is a performance art form consisting of purposefully selected sequences of human movement. This movement has aesthetic and symbolic value, and is acknowledged as dance by performers and observers within a particular culture.This year come and showcase your talent and dazzle the audience.</p>\
+                                    <div id='competitions_list'>\
+                                        <div>\
+                                            <div><span id='head'>In-Sync</span><p>Group dance competition</p></div>\
+                                            <div><span id='head'>Inner Flame</span><p>Solo dance competition</p></div>\
+                                            <div><span id='head'>Foot Loose</span><p>Street dance competition</p></div>\
+                                        </ul>\
+                                    </div>\
+                                    <p>Details will be updated soon.</p>\
+                                    <div id='social_media_icons'>\
+                                        <ul>\
+                                            <li id='facebook'><a href='https://www.facebook.com/aarohanfest/' target='_blank'><img src='images/facebook_icon.png' alt='https://www.facebook.com/aarohanfest/'></a></li>\
+                                            <li id='instagram'><a href='https://www.instagram.com/mitaarohanfest/' target='_blank'><img src='images/instagram_icon.png' alt='https://www.facebook.com/aarohanfest/'></a></li>\
+                                        </ul>\
+                                </div>\
+                            </div>"),
+                type: 'inline'
+            }
+        ]
+    });
+    $("#sports_slab").magnificPopup({
+        items: [
+            {
+                src: $("<div id='sports_content'> \
+                                <div id='competitions_content'>\
+                                    <span id='head'>Sports</span>\
+                                    <p>A competition held to determine the best teams and greatest achivements. The ultimate platform to showcase your skills. Defeat your opponents and rise above all in this ultimate showdown.</p>\
+                                    <div id='competitions_list'>\
+                                        <div>\
+                                            <div><span id='head'>Paintball</span><p>Group & solo competition</p></div>\
+                                            <div><span id='head'>Box Football</span><p>Group competition</p></div>\
+                                        </ul>\
+                                    </div>\
+                                    <p>Details will be updated soon.</p>\
+                                    <div id='social_media_icons'>\
+                                        <ul>\
+                                            <li id='facebook'><a href='https://www.facebook.com/aarohanfest/' target='_blank'><img src='images/facebook_icon.png' alt='https://www.facebook.com/aarohanfest/'></a></li>\
+                                            <li id='instagram'><a href='https://www.instagram.com/mitaarohanfest/' target='_blank'><img src='images/instagram_icon.png' alt='https://www.facebook.com/aarohanfest/'></a></li>\
+                                        </ul>\
+                                </div>\
+                            </div>"),
+                type: 'inline'
+            }
+        ]
+    });
+    $("#online_slab").magnificPopup({
+        items: [
+            {
+                src: $("<div id='online_content'> \
+                                <div id='competitions_content'>\
+                                    <span id='head'>Online</span>\
+                                    <p>A competition held to showcase your creative mind.It is an exchange of ideologies, catchy phrases, humour, energy, emotions and imagination.</p>\
+                                    <div id='competitions_list'>\
+                                        <div>\
+                                            <div><span id='head'>Cursor stroke</span><p>Graphic design competition</p></div>\
+                                            <div><span id='head'>Capture</span><p>Photography competition</p></div>\
+                                            <div><span id='head'>Lit up</span><p>Creative writing competition</p></div>\
+                                        </ul>\
+                                    </div>\
+                                    <p>Details will be updated soon.</p>\
+                                    <div id='social_media_icons'>\
+                                        <ul>\
+                                            <li id='facebook'><a href='https://www.facebook.com/aarohanfest/' target='_blank'><img src='images/facebook_icon.png' alt='https://www.facebook.com/aarohanfest/'></a></li>\
+                                            <li id='instagram'><a href='https://www.instagram.com/mitaarohanfest/' target='_blank'><img src='images/instagram_icon.png' alt='https://www.facebook.com/aarohanfest/'></a></li>\
+                                        </ul>\
+                                </div>\
+                            </div>"),
+                type: 'inline'
+            }
+        ]
+    });
+    $("#finearts_slab").magnificPopup({
+        items: [
+            {
+                src: $("<div id='finearts_content'> \
+                                <div id='competitions_content'>\
+                                    <span id='head'>Fine Arts</span>\
+                                    <p>A competition held to showcase your creative mind.It is an exchange of ideologies, catchy phrases, humour, energy, emotions and imagination.Move the audience with colors or just plain old black and white.</p>\
+                                    <div id='competitions_list'>\
+                                        <div>\
+                                            <div><span id='head'>Art Marathon</span><p>Spot painting competition</p></div>\
+                                        </ul>\
+                                    </div>\
+                                    <p>Details will be updated soon.</p>\
+                                    <div id='social_media_icons'>\
+                                        <ul>\
+                                            <li id='facebook'><a href='https://www.facebook.com/aarohanfest/' target='_blank'><img src='images/facebook_icon.png' alt='https://www.facebook.com/aarohanfest/'></a></li>\
+                                            <li id='instagram'><a href='https://www.instagram.com/mitaarohanfest/' target='_blank'><img src='images/instagram_icon.png' alt='https://www.facebook.com/aarohanfest/'></a></li>\
+                                        </ul>\
+                                </div>\
+                            </div>"),
+                type: 'inline'
+            }
+        ]
+    });
     // $("#after_movie").magnificPopup({
     //     items: [
     //         {
@@ -224,22 +377,58 @@ $(document).ready(function () {
     $(".co").click(function () {
         new Vivus("acting", {
                 duration: 400,
-                delay: 300,
+                delay: 350,
                 start: "inViewport",
                 pathTimingFunction: Vivus.EASE_OUT,
                 animTimingFunction: Vivus.EASE_OUT
             }, function () {
                 $("#acting path").attr("fill","#000");
-            });
-            new Vivus("langaming", {
-                    duration: 2000,
-                    delay: 300,
-                    start: "inViewport",
-                    pathTimingFunction: Vivus.EASE_OUT,
-                    animTimingFunction: Vivus.EASE_OUT
-                }, function () {
-                    $("#acting path").attr("fill","#000");
-            });
+        });
+        new Vivus("langaming", {
+                duration: 2000,
+                delay: 350,
+                start: "inViewport",
+                pathTimingFunction: Vivus.EASE_OUT,
+                animTimingFunction: Vivus.EASE_OUT
+            }, function () {
+                $("#acting path").attr("fill","#000");
+        });
+        new Vivus("dance", {
+                duration: 1000,
+                delay: 350,
+                start: "inViewport",
+                pathTimingFunction: Vivus.EASE_OUT,
+                animTimingFunction: Vivus.EASE_OUT
+            }, function () {
+                $("#acting path").attr("fill","#000");
+        });
+        new Vivus("sports", {
+                duration: 3000,
+                delay: 350,
+                start: "inViewport",
+                pathTimingFunction: Vivus.EASE_OUT,
+                animTimingFunction: Vivus.EASE_OUT
+            }, function () {
+                $("#acting path").attr("fill","#000");
+        });
+        new Vivus("online", {
+                duration: 3000,
+                delay: 350,
+                start: "inViewport",
+                pathTimingFunction: Vivus.EASE_OUT,
+                animTimingFunction: Vivus.EASE_OUT
+            }, function () {
+                $("#acting path").attr("fill","#000");
+        });
+        new Vivus("finearts", {
+                duration: 400,
+                delay: 350,
+                start: "inViewport",
+                pathTimingFunction: Vivus.EASE_OUT,
+                animTimingFunction: Vivus.EASE_OUT
+            }, function () {
+                $("#acting path").attr("fill","#000");
+        });
     });
 });
 $(window).load(function () {

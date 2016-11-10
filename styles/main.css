@@ -2645,17 +2645,31 @@ textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
     left: -5%;
     top: -4%;
 }
+#dance {
+    position: relative;
+    left: -21%;
+}
+#sports {
+    position: relative;
+    left: -5%;
+}
+#online {
+    position: relative;
+    left: 5%;
+}
 #acting path {
     fill: none;
 }
 #langaming path {
     fill: none;
 }
-#acting_slab:hover>svg path {
-    fill: #A60000;
-    stroke: #A60000;
+#finearts path {
+    fill: none;
 }
-#langaming_slab:hover>svg path {
+#dance path {
+    fill: none;
+}
+#acting_slab:hover>svg path,#sports_slab:hover>svg path, #langaming_slab:hover>svg path, #dance_slab:hover>svg path, #online_slab:hover>svg path, #finearts_slab:hover>svg path {
     fill: #A60000;
     stroke: #A60000;
 }
@@ -2706,5 +2720,56 @@ textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
     background: url("../images/svg_finearts_bg.png") no-repeat center bottom;
     background-size: contain;
     display: inline-block;
+}
+/* Styling competitions popups */
+#acting_content, #langaming_content, #dance_content, #sports_content, #online_content, #finearts_content {
+    position: relative;
+    background-color: #FFF;
+    width: auto;
+    max-width: 1000px;
+    height: 450px;
+    margin: 20px auto;
+}
+#competitions_content {
+    overflow: hidden;
+    width: 100%;
+    height: 450px;
+    padding-top: 20px;
+    text-align: center;
+    background-color: #FFF;
+}
+#competitions_content #head {
+    font-family: 'rock_saltregular';
+    font-size: 30px;
+    -webkit-font-smoothing: subpixel-antialiased!important;
+    font-weight: 600;
+    margin-bottom:  40px;
+    margin-top: 50px;
+}
+#competitions_content p {
+    font-family: 'Century Gothic';
+    font-size: 20px;
+    -webkit-font-smoothing: subpixel-antialiased!important;
+    font-weight: 400;
+    margin-top: 30px;
+}
+#competitions_list div>div {
+    font-family: 'rock_saltregular';
+    font-size: 20px;
+    -webkit-font-smoothing: subpixel-antialiased!important;
+    font-weight: 400;
+    display: inline-block;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+#competitions_list div {
+    padding-top: 25px;
+    padding-right: 5px;
+}
+#competitions_list div span {
+    display: inline;
+}
+#competitions_content #social_media_icons {
+    left: 0;
 }
 

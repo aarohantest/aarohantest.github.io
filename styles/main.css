@@ -1961,7 +1961,7 @@ a{
     background: url("../images/border_horizontal.png") no-repeat center center;
     background-size: cover;
 }
-.section, .fullpage, .about_us, .throwback, .contact_us {
+.section, .fullpage, .about_us, .Gallery, .contact_us {
     width: 100%;
     height: 100%;
 }
@@ -2306,10 +2306,10 @@ a{
 .nav_toggle {
     display: none;
 }
-/* Styling throwback page */
-.throwback {
+/* Styling Gallery page */
+.Gallery {
     position: relative; /* important */
-    background: url("../images/throwback_bg.png") no-repeat center center;
+    background: url("../images/gallery_bg.png") no-repeat center center;
     background-size: cover;
     width: 100%;
     height: 100%;
@@ -2650,7 +2650,7 @@ textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
 #dance_slab, #finearts_slab {
     float: right;
 }
-#langaming_slab, #online_slab {
+#music_slab, #online_slab {
     margin-left: 22%;
 }
 #acting {
@@ -2658,9 +2658,9 @@ textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
     left: 5%;
     top: -8%;
 }
-#langaming {
+#music {
     position: relative;
-    left: -5%;
+    left: -10%;
     top: -4%;
 }
 #dance {
@@ -2678,7 +2678,7 @@ textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
 #acting path {
     fill: none;
 }
-#langaming path {
+#music path {
     fill: none;
 }
 #finearts path {
@@ -2687,7 +2687,7 @@ textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
 #dance path {
     fill: none;
 }
-#acting_slab:hover>svg path,#sports_slab:hover>svg path, #langaming_slab:hover>svg path, #dance_slab:hover>svg path, #online_slab:hover>svg path, #finearts_slab:hover>svg path {
+#acting_slab:hover>svg path,#sports_slab:hover>svg path, #music_slab:hover>svg path, #dance_slab:hover>svg path, #online_slab:hover>svg path, #finearts_slab:hover>svg path {
     fill: #A60000;
     stroke: #A60000;
 }
@@ -2699,11 +2699,11 @@ textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
     background-size: contain;
     display: inline-block;
 }
-#langaming_slab {
+#music_slab {
     width: 229px;
     height: 234px;
     cursor: pointer;
-    background: url("../images/svg_langaming_bg.png") no-repeat center bottom;
+    background: url("../images/svg_music_bg.png") no-repeat center bottom;
     background-size: contain;
     display: inline-block;
 }
@@ -2740,7 +2740,7 @@ textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
     display: inline-block;
 }
 /* Styling competitions popups */
-#acting_content, #langaming_content, #dance_content, #sports_content, #online_content, #finearts_content {
+#acting_content, #music_content, #dance_content, #sports_content, #online_content, #finearts_content {
     position: relative;
     background-color: #FFF;
     width: auto;
@@ -2789,6 +2789,9 @@ textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
 }
 #competitions_content #social_media_icons {
     left: 0;
+}
+#sports_content #competitions_content #social_media_icons {
+    left: auto;
 }
 
 .mobile .hero_section {
@@ -2991,7 +2994,7 @@ textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
 .mobile #social_content p>span {
     display: none;
 }
-.mobile #slab_row1>div, .mobile #slab_row2>div{
+.mobile #slab_row1>div,.mobile #slab_row2>div{
     width: 174px;
     height: 194px;
 }
@@ -2999,7 +3002,7 @@ textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
     float: left;
     margin-left: 0;
 }
-.mobile #online_slab, .mobile #langaming_slab {
+.mobile #online_slab, .mobile #music_slab {
     float: right;
     margin-left: 0;
 }
@@ -3009,7 +3012,7 @@ textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
 .mobile #acting {
     top: -10%;
 }
-.mobile #langaming {
+.mobile #music {
     top: -9%;
     left: -4%;
 }

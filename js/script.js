@@ -153,7 +153,7 @@ $(document).ready(function () {
     });*/
     // var mynav = setInterval(myNav, 1000);
     // function myNav() {
-    //     var $bar = [$(".hero_section"),$(".about_us"),$(".throwback"),$("contact_us")];
+    //     var $bar = [$(".hero_section"),$(".about_us"),$(".Gallery"),$("contact_us")];
     //     $.each($bar, function () {
     //         var bool = $(this).isOnScreen(0.1,0.1);
     //         console.log(bool);
@@ -202,7 +202,7 @@ $(document).ready(function () {
 			clearInterval(myVar);
 		}
 	  }
-    //   Throwback image popup
+    //   Gallery image popup
     var $elem = [$(".place1"),$(".place2"),$(".place3"),$(".place4"),$(".place5"),$(".place6")];
     $.each($elem, function() { // the containers for all your galleries
         $(this).magnificPopup({
@@ -245,18 +245,17 @@ $(document).ready(function () {
             }
         ]
     });
-    $("#langaming_slab").magnificPopup({
+    $("#music_slab").magnificPopup({
         items: [
             {
                 src: $("<div id='acting_content'> \
                                 <div id='competitions_content'>\
-                                    <span id='head'>Lan Gaming</span>\
+                                    <span id='head'>Music</span>\
                                     <p>“I don’t need to get a life, I’m a gamer, I have lots of lives!”.The ultimate gaming arena! Escape the reality and land into the virtual world of survival. Team up! Push yourself further than you have ever before to see the face of your next nemesis.</p>\
                                     <div id='competitions_list'>\
                                         <div>\
-                                            <div><span id='head'>Dota 2</span><p>Group competition</p></div>\
-                                            <div><span id='head'>Counter Strike</span><p>Group competition</p></div>\
-                                            <div><span id='head'>Fifa 2015</span><p>Solo competition</p></div>\
+                                            <div><span id='head'>Humming</span><p>Solo singing competition</p></div>\
+                                            <div><span id='head'>Band wars</span><p>Rock band competition</p></div>\
                                         </ul>\
                                     </div>\
                                     <p>Details will be updated soon.</p>\
@@ -302,12 +301,15 @@ $(document).ready(function () {
             {
                 src: $("<div id='sports_content'> \
                                 <div id='competitions_content'>\
-                                    <span id='head'>Sports</span>\
+                                    <span id='head'>Gaming & Sports</span>\
                                     <p>A competition held to determine the best teams and greatest achivements. The ultimate platform to showcase your skills. Defeat your opponents and rise above all in this ultimate showdown.</p>\
                                     <div id='competitions_list'>\
                                         <div>\
                                             <div><span id='head'>Paintball</span><p>Group & solo competition</p></div>\
                                             <div><span id='head'>Box Football</span><p>Group competition</p></div>\
+                                            <div><span id='head'>Dota 2</span><p>Group competition</p></div>\
+                                            <div><span id='head'>Counter Strike</span><p>Group competition</p></div>\
+                                            <div><span id='head'>Fifa 2015</span><p>Solo competition</p></div>\
                                         </ul>\
                                     </div>\
                                     <p>Details will be updated soon.</p>\
@@ -412,8 +414,8 @@ $(document).ready(function () {
             }, function () {
                 $("#acting path").attr("fill","#000");
         });
-        new Vivus("langaming", {
-                duration: 2000,
+        new Vivus("music", {
+                duration: 1000,
                 delay: 350,
                 start: "inViewport",
                 pathTimingFunction: Vivus.EASE_OUT,

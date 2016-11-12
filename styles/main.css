@@ -2628,11 +2628,10 @@ textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
     height: 100%;
     margin: 0 auto;
 }
-#slab_row1 {
+/*#slab_row1 {
     position: absolute;
     top: 100px;
     left: 50%;
-    -webkit-transform: translate(-50%,0);
     transform: translate(-50%,0);
     width: 90%;
 }
@@ -2641,7 +2640,6 @@ textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
     bottom: 20px;
     width: 90%;
     left: 50%;
-    -webkit-transform: translate(-50%,0);
     transform: translate(-50%,0);
 }
 #acting_slab, #sports_slab {
@@ -2652,6 +2650,46 @@ textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
 }
 #music_slab, #online_slab {
     margin-left: 22%;
+}*/
+#slab_container #slab_row {
+    width: 90%;
+    height: 80%;
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    -webkit-transform: translate(-50%,0);
+    transform: translate(-50%,0);
+}
+#slab_container #slab_row>div {
+    position: absolute;
+}
+#acting_slab {
+    top: 0;
+    left: 0;
+}
+#music_slab {
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+}
+#dance_slab {
+    top: 0;
+    right: 0;
+}
+#sports_slab {
+    bottom: 0;
+    left: 0;
+}
+#online_slab {
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+}
+#finearts_slab {
+    bottom: 0;
+    right: 0;
 }
 #acting {
     position: relative;
@@ -2994,38 +3032,42 @@ textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
 .mobile #social_content p>span {
     display: none;
 }
-.mobile #slab_row1>div,.mobile #slab_row2>div{
-    width: 174px;
-    height: 194px;
+.mobile #slab_row>div {
+    width: 48%;
+    max-height: 37%;
 }
-.mobile #acting_slab, .mobile #dance_slab {
-    float: left;
-    margin-left: 0;
+.mobile #acting_slab {
+    top: 0;
+    left: 0;
 }
-.mobile #online_slab, .mobile #music_slab {
-    float: right;
-    margin-left: 0;
+.mobile #music_slab {
+    right: 0;
+    left: auto;
+    -webkit-transform: translate(0,0);
+    transform: translate(0,0);
 }
 .mobile #dance_slab {
-    margin-top: 61%;
-}
-.mobile #acting {
-    top: -10%;
-}
-.mobile #music {
-    top: -9%;
-    left: -4%;
-}
-.mobile #dance {
-    top: -5%;
-}
-.mobile #sports {
-    top: -6%;
-}
-.mobile #online {
-    top: -5%;
     left: 0;
-    width: 100%;
+    top: 50%;
+    -webkit-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+}
+.mobile #sports_slab {
+    right: 0;
+    top: 50%;
+    left: auto;
+    -webkit-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+}
+.mobile #online_slab {
+    bottom: 0;
+    left: 0;
+    -webkit-transform: translate(0,0);
+    transform: translate(0,0);
+}
+.mobile #finearts_slab {
+    bottom: 0;
+    right: 0;
 }
 .mobile .contact_us {
     background: url("../images/contact_us_mobile_bg.png") no-repeat center center;
@@ -3040,18 +3082,19 @@ textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
 .mobile #contact_form #name {
     font-size: 16px;
     height: auto;
-    top: 30px;
-    left: 38%;
+    top: 1.8em;
+    left: 39%;
 }
 .mobile #contact_form #email {
     font-size: 16px;
     height: auto;
-    top: 35px;
+    top: 1.8em;
     left: 15%;
 }
 .mobile #contact_form #message {
     left: 0;
     font-size: 16px;
+    width: 87%;
 }
 .mobile #contact_form #send {
     font-size: 18px;
@@ -3059,10 +3102,15 @@ textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
     height: 40px;
     left: 18%;
 }
+.mobile #connect_with_us #social_media_icons ul {
+    margin-top: 10px;
+}
 .mobile #contact_details {
     width: 97%;
     position: relative;
     top: 23%;
+    margin-left: 5px;
+    margin-bottom: 5px;
 }
 .mobile #contact_details>div {
     display: inline-block;
@@ -3079,6 +3127,7 @@ textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
 }
 .mobile #connect_with_us #social_media_icons {
     bottom: 0;
+    margin-left: 5px;
 }
 .mobile #connect_with_us #social_media_icons h2 {
     font-size: 14px;

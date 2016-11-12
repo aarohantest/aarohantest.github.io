@@ -1,10 +1,38 @@
 $(document).ready(function () {
+    $("body").restive({
+        breakpoints: ['10000'],
+        classes: ['mit'],
+        turbo_classes: 'is_mobile=mobile,is_phone=phone,is_tablet=tablet,is_landscape-landscape'
+    });
+    $(".nav_bar ul li a").on("click", function () {
+        $(".nav").toggleClass("open");
+        $(".overlay").toggleClass("over");
+        $(".nav_toggle").toggleClass("fa-times");
+        if ($(".overlay").hasClass("over")) {
+            $('.overlay').animate({opacity: '0.6'},"slow");
+            $('.overlay').css({"display":"block"});
+        }else {
+            $('.overlay').animate({opacity: '0'},"slow");
+            $('.overlay').css({"display":"none"});
+        }
+    });
+    $(".nav_toggle").on("click", function() {
+        $(".nav").toggleClass("open");
+        $(".overlay").toggleClass("over");
+        $(".nav_toggle").toggleClass("fa-times");
+        if ($(".overlay").hasClass("over")) {
+            $('.overlay').animate({opacity: '0.6'},"slow");
+            $('.overlay').css({"display":"block"});
+        }else {
+            $('.overlay').animate({opacity: '0'},"slow");
+            $('.overlay').css({"display":"none"});
+        }
+    });
     $.each([$("#about_content"),$("#message")], function () {
         $(this).mCustomScrollbar({
             theme: "dark-2"
         });
     });
-
     function countdown() {
         var eventDate = new Date(2017, 0, 11);
         var now = new Date();
@@ -254,7 +282,7 @@ $(document).ready(function () {
                                         <div>\
                                             <div><span id='head'>In-Sync</span><p>Group dance competition</p></div>\
                                             <div><span id='head'>Inner Flame</span><p>Solo dance competition</p></div>\
-                                            <div><span id='head'>Foot Loose</span><p>Street dance competition</p></div>\
+                                            <!--<div><span id='head'>Foot Loose</span><p>Street dance competition</p></div>-->\
                                         </ul>\
                                     </div>\
                                     <p>Details will be updated soon.</p>\

@@ -1973,6 +1973,9 @@ a{
     background: url("../images/hero_bg.png") no-repeat center center;
     background-size: cover;
 }
+.overlay {
+    display: none;
+}
 #frontpage_bg {
     position: absolute;
     top: 50%;
@@ -2007,7 +2010,7 @@ a{
 }
 
 /* Navigation bar styling */
-#nav_bar {
+.nav_bar {
     position: absolute;
     top: 0;
     right: 0;
@@ -2017,25 +2020,28 @@ a{
     -webkit-font-smoothing: subpixel-antialiased!important;
     font-weight: 600;
 }
-#nav_bar ul li {
+.nav_bar #asset_wrapper {
+    display: none;
+}
+.nav_bar ul li {
     display: inline;
     padding-right: 13px;
     padding-left: 13px;
 }
-#nav_bar ul {
+.nav_bar ul {
     padding-top: 25px;
     padding-right: 5px;
 }
-#nav_bar a {
+.nav_bar a {
     display: inline-block;
     color: #000;
 }
 /* Navigation bar hover effect */
-#nav_bar a:hover {
+.nav_bar a:hover {
     color: #663333;
 }
 /* Creating text underline effect that triggers on hover*/
-#nav_bar a::after {
+.nav_bar a::after {
     content: '';
     display: block;
     width: 0;
@@ -2047,7 +2053,7 @@ a{
     -o-transition: width .3s; /* Opera */
     transition: width .3s;
 }
-#nav_bar a:hover::after {
+.nav_bar a:hover::after {
     width: 100%;
     -webkit-transition: width .3s; /* Safari */
     -moz-transition: width .3s;/* Mozilla */
@@ -2092,6 +2098,7 @@ a{
     overflow-x: hidden;
     position: relative;
     margin-top: 10%;
+    z-index: 1;
 }
 #about_content #first_line {
     width: 13%;
@@ -2288,6 +2295,17 @@ a{
 .fa-video-camera:before {
   content: "\f03d";
 }
+.fa-bars:before {
+  content: "\f0c9";
+}
+.fa-remove:before,
+.fa-close:before,
+.fa-times:before {
+  content: "\f00d";
+}
+.nav_toggle {
+    display: none;
+}
 /* Styling throwback page */
 .throwback {
     position: relative; /* important */
@@ -2320,7 +2338,7 @@ a{
 #photo {
     position: absolute;
     width: 20%;
-    height: 35%;
+    padding-bottom: 10px;
     background-color: #FFF;
     text-align: center;
     -webkit-box-shadow: 0px 0px 10px 2px rgba(135,128,135,1);
@@ -2773,3 +2791,325 @@ textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
     left: 0;
 }
 
+.mobile .hero_section {
+    background: url("../images/hero_bg_mobile.png") no-repeat center center;
+    background-size: cover;
+}
+.mobile #frontpage_bg {
+    width: 100%;
+    height: auto;
+}
+.mobile #social_media_icons {
+    bottom: 20%;
+    width: 100%;
+}
+.mobile #social_media_icons>div {
+    position: relative;
+    width: 315px;
+    margin: 0 auto;
+}
+.mobile #countdown {
+    left: 5%;
+    font-size: 24px;
+}
+.mobile #countdown #Days, .mobile #countdown #Seconds, .mobile #countdown #Hours {
+    font-size: 16px;
+}
+.mobile .hero_section #whatsapp_tooltip {
+    right: 30%;
+    left: auto;
+    top: 69%;
+}
+.mobile .hero_section #tooltiptext {
+    width: 100px;
+    font-size: 12px;
+}
+.mobile .hero_section #tooltiptext::after {
+    left: 7%;
+    top: 95%;
+}
+.mobile .overlay {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 8;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0;
+}
+.mobile .nav_toggle {
+    display: block;
+    font-size: 30px;
+    position: relative;
+    left: 65%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+.mobile #bar {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    z-index: 15;
+    background-color: #000;
+    color: #FFF;
+    border-radius: 50%;
+}
+.mobile .nav_bar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45%;
+    height: 100%;
+    z-index: 11; /* Added this as vmcustomscrollbar was removing a tag and it was below #about_content */
+    font-family: 'rock_saltregular';
+    font-size: 16px;
+    -webkit-font-smoothing: subpixel-antialiased!important;
+    font-weight: 600;
+    background-color: #FFF;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    -webkit-transition: all .3s; /* Safari */
+    -moz-transition: all .3s; /* Mozilla */
+    -o-transition: all .3s; /* Opera */
+    transition: all .3s;
+}
+.mobile .nav_bar.open {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+.mobile .nav_bar ul li {
+    padding-left: 13px;
+    padding-top: 13px;
+    margin-bottom: 13px;
+    width: 85%;
+    display: block;
+}
+.mobile .nav_bar ul {
+    padding-top: 25px;
+    position: relative;
+    top: 10%;
+    width: 100%;
+}
+.mobile #about_content #first_line {
+    width: 50%;
+    -webkit-transform: translate(150px);
+    transform: translate(150px);
+    margin-bottom: 5%;
+}
+.mobile #about_content #line1 {
+    font-size: 250%;
+}
+.mobile #about_content #line2 {
+    font-size: 88%;
+}
+.mobile #content #head {
+    font-size: 25px;
+}
+.mobile #content p {
+    font-size: 18px;
+    margin-bottom: 6%;
+    text-align: justify;
+}
+.mobile #content {
+    margin-bottom: 10%;
+}
+.mobile #about_content #asset_wrapper {
+    display: none;
+}
+.mobile .nav_bar #asset_wrapper {
+    display: block;
+    float: none;
+    right: 0;
+    width: 92%;
+    position: absolute;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.mobile .nav_bar #asset_wrapper ul {
+    margin: 0 auto;
+}
+.mobile .nav_bar #asset_wrapper ul li {
+    padding-left: 0;
+    padding-top: 5px;
+    margin-bottom: 20px;
+}
+.mobile .nav_bar #asset_wrapper a {
+    font-size: 14px;
+    width: 135px;
+    padding: 5px;
+    max-height: 20px;
+}
+.mobile #images_container #images {
+    top: 0;
+}
+.mobile #photo {
+    width: 45%;
+}
+.mobile #photo #text {
+    font-size: 12px;
+}
+.mobile .place1 {
+    top: 8%;
+}
+.mobile .place2 {
+    top: 28%;
+}
+.mobile .place3 {
+    left: 52%;
+    top: 52%;
+}
+.mobile .place4 {
+    left: 2%;
+    top: 50%;
+}
+.mobile .place5 {
+    top: 75%;
+    left: 26%;
+}
+.mobile .socialcause {
+    background: url("../images/socialcause_mobile_bg.png") no-repeat center bottom;
+    background-size: cover;
+}
+.mobile #social_content {
+    width: 95%;
+    margin-left: 10px;
+    margin-bottom: 5%;
+}
+.mobile #social_content #head {
+    font-size: 20px;
+}
+.mobile #social_content p {
+    font-size: 0.9rem;
+    text-align: justify;
+}
+.mobile #social_content p>span {
+    display: none;
+}
+.mobile #slab_row1>div, .mobile #slab_row2>div{
+    width: 174px;
+    height: 194px;
+}
+.mobile #acting_slab, .mobile #dance_slab {
+    float: left;
+    margin-left: 0;
+}
+.mobile #online_slab, .mobile #langaming_slab {
+    float: right;
+    margin-left: 0;
+}
+.mobile #dance_slab {
+    margin-top: 61%;
+}
+.mobile #acting {
+    top: -10%;
+}
+.mobile #langaming {
+    top: -9%;
+    left: -4%;
+}
+.mobile #dance {
+    top: -5%;
+}
+.mobile #sports {
+    top: -6%;
+}
+.mobile #online {
+    top: -5%;
+    left: 0;
+    width: 100%;
+}
+.mobile .contact_us {
+    background: url("../images/contact_us_mobile_bg.png") no-repeat center center;
+    background-size: cover;
+}
+.mobile #contact_form {
+    left: 7%;
+    width: 90%;
+    height: 43%;
+    top: 13%;
+}
+.mobile #contact_form #name {
+    font-size: 16px;
+    height: auto;
+    top: 30px;
+    left: 38%;
+}
+.mobile #contact_form #email {
+    font-size: 16px;
+    height: auto;
+    top: 35px;
+    left: 15%;
+}
+.mobile #contact_form #message {
+    left: 0;
+    font-size: 16px;
+}
+.mobile #contact_form #send {
+    font-size: 18px;
+    width: 80px;
+    height: 40px;
+    left: 18%;
+}
+.mobile #contact_details {
+    width: 97%;
+    position: relative;
+    top: 23%;
+}
+.mobile #contact_details>div {
+    display: inline-block;
+    width: 100%;
+}
+.mobile #contact_details h2 {
+    font-size: 14px;
+}
+.mobile #contact_details p {
+    font-size: 13px;
+}
+.mobile #contact_details br {
+    display: none;
+}
+.mobile #connect_with_us #social_media_icons {
+    bottom: 0;
+}
+.mobile #connect_with_us #social_media_icons h2 {
+    font-size: 14px;
+}
+.mobile #connect_with_us #social_media_icons>div {
+    margin-left: 0;
+}
+.mobile #connect_with_us #social_media_icons img {
+    width: 80px;
+}
+.mobile #connect_with_us #social_media_icons #whatsapp img {
+    width: 100px;
+}
+.mobile #connect_with_us #whatsapp_tooltip {
+    left: 56%;
+    top: 90%;
+}
+.mobile #competitions_content #head {
+    font-size: 20px;
+}
+.mobile #competitions_content p {
+    font-size: 16px;
+}
+.mobile #competitions_list div {
+    padding-top: 15px;
+}
+.mobile #competitions_list div>div {
+    padding-left: 3px;
+    padding-right: 3px;
+    width: 30%;
+}
+.mobile #competitions_content #social_media_icons {
+    bottom: 0;
+}
+.mobile #wrapper_content div>#line2 {
+    font-size: 35px;
+}

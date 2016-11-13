@@ -2918,6 +2918,7 @@ textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
     -moz-transition: all .3s; /* Mozilla */
     -o-transition: all .3s; /* Opera */
     transition: all .3s;
+    overflow: hidden;
 }
 .mobile .nav_bar.open {
     -webkit-transform: translateY(0);
@@ -3164,4 +3165,100 @@ textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
 }
 .mobile #wrapper_content div>#line2 {
     font-size: 35px;
+}
+.mobile.css-320 #social_media_icons img {
+    width: 28%;
+}
+.mobile.css-320 #social_media_icons>div {
+    width: 230px;
+}
+.mobile.css-320 #social_media_icons #whatsapp img {
+    width: 32%;
+}
+.mobile.css-320 .hero_section #whatsapp_tooltip {
+    right: 33%;
+}
+.mobile.css-320 #countdown {
+    font-size: 16px;
+}
+.mobile.css-320 #countdown #Days, .mobile.css-320 #countdown #Hours, .mobile.css-320 #countdown #Seconds {
+    font-size: 13px;
+    padding-left: 8px;
+}
+.mobile.css-320 #bar {
+    width: 40px;
+    height: 40px;
+}
+.mobile.css-320 .nav_toggle {
+    left: 63%;
+    font-size: 23px;
+}
+.mobile.css-320 #about_content #first_line {
+    width: 45%;
+    -webkit-transform: translate(120px, 0);
+    transform: translate(120px, 0);
+}
+.mobile.css-320 #content {
+    width: 95%;
+}
+.mobile.css-320 #content #head {
+    font-size: 22px;
+}
+.mobile.css-320 #wrapper_content div>#line2 {
+    font-size: 32px;
+}
+.mobile.css-320 .nav_bar #asset_wrapper a {
+    font-size: 10px;
+    width: 104px;
+    max-height: 15px;
+    border: 2px solid #000;
+}
+.mobile.css-320 #slab_row>div {
+    max-height: 40%;
+}
+.mobile.css-320 #slab_container #slab_row {
+    top: 10%;
+}
+.mobile.css-320 #competitions_content #social_media_icons img {
+    width: 20%;
+}
+.mobile.css-320 #competitions_content #social_media_icons {
+    position: relative;
+}
+.mobile.css-320 #social_content p {
+    font-size: 0.8em;
+}
+.mobile.css-320 #social_content #head {
+    font-size: 15px;
+}
+.mobile.css-320 #contact_form #name, .mobile.css-320 #contact_form #email, .mobile.css-320 #contact_form #message {
+    font-size: 13px;
+}
+.mobile.css-320 #contact_details {
+    top: 19%;
+}
+.mobile.css-320 #contact_details h2 {
+    font-size: 12px;
+}
+.mobile.css-320 #contact_details p {
+    font-size: 11px;
+}
+.mobile.css-320 #connect_with_us #social_media_icons h2 {
+    font-size: 12px;
+}
+.mobile.css-320 #connect_with_us #social_media_icons img {
+    width: 60px;
+}
+.mobile.css-320 #connect_with_us #social_media_icons #whatsapp img {
+    width: 75px;
+}
+.mobile.css-320 #contact_form #send {
+    font-size: 16px;
+    width: 65px;
+    left: 16%;
+    height: 30px;
+}
+.mobile.css-320 #contact_details #reg_div {
+    position: absolute;
+    top:80%;
 }

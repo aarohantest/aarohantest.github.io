@@ -1,8 +1,12 @@
 $(document).ready(function () {
     $("body").restive({
-        breakpoints: ['10000'],
-        classes: ['mit'],
+        breakpoints: ['240', '320', '480', '640', '960', '1024', '1280','10000'],
+        classes: ['css-240', 'css-320', 'css-480', 'css-640', 'css-960', 'css-1024', 'css-1280','mit'],
+        force_dip: true,
         turbo_classes: 'is_mobile=mobile,is_phone=phone,is_tablet=tablet,is_landscape-landscape'
+    });
+    $(window).resize( function() {
+        window.location.href = window.location.href;
     });
     $(".nav_bar ul li a").on("click", function () {
         $(".nav").toggleClass("open");

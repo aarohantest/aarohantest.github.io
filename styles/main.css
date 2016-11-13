@@ -3262,3 +3262,114 @@ textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
     position: absolute;
     top:80%;
 }
+.mobile.landscape .contact_us {
+    background: url("../images/contact_us_bg.png") no-repeat center center;
+    background-size: cover;
+}
+.mobile.landscape #contact_form {
+    width: 60%;
+    left: 37%;
+    height: 72%;
+}
+.mobile.landscape #contact_form #name {
+    font-size: 12px;
+    top: 3em;
+    left: 26%;
+}
+.mobile.landscape #contact_form #email {
+    font-size: 12px;
+    top: 3.4em;
+    left: 9%;
+}
+.mobile.landscape #contact_form #message {
+    font-size: 12px;
+    width: 67%;
+    top: 12%;
+}
+.mobile.landscape #contact_form #send {
+    font-size: 14px;
+    left: 13%;
+    width: 60px;
+    height: 30px;
+    border: 2px solid #000;
+}
+.mobile.landscape #contact_details br {
+    display: block;
+}
+.mobile.landscape #contact_details h2 {
+    font-size: 11px;
+    margin-bottom: 5px;
+}
+.mobile.landscape #contact_details p {
+    font-size: 10px;
+    line-height: 15px;
+}
+.mobile.landscape #contact_details>div {
+    width: 35%;
+    display: block;
+}
+.mobile.landscape #contact_details {
+    top: 23px;
+}
+.mobile.landscape #contact_details #reg_div {
+    top: -34px;
+    position: relative;
+}
+.mobile.landscape #connect_with_us #social_media_icons h2 {
+    font-size: 12px;
+}
+.mobile.landscape #connect_with_us #social_media_icons>div {
+    width: 250px;
+}
+.mobile.landscape #connect_with_us #social_media_icons img {
+    width: 60px;
+}
+.mobile.landscape #connect_with_us #social_media_icons #whatsapp img {
+    width: 75px;
+}
+.mobile.landscape #connect_with_us #whatsapp_tooltip {
+    left: 25%;
+    top: 84%;
+}
+.mobile.landscape #connect_with_us #whatsapp_tooltip #tooltiptext {
+    font-size: 12px;
+    width: 100px;
+}
+.mobile.landscape #bar {
+    width: 40px;
+    height: 40px;
+}
+.mobile.landscape .nav_toggle {
+    font-size: 25px;
+    left: 60%;
+}
+.mobile.landscape .nav_bar {
+    width: 30%;
+    font-size: 12px;
+}
+.mobile.landscape .nav_bar ul li {
+    height: 16px;
+    margin-bottom: 8px;
+}
+.mobile.landscape .nav_bar #asset_wrapper {
+    width: 80%;
+}
+.mobile.landscape .nav_bar #asset_wrapper a {
+    font-size: 10px;
+    width: 100px;
+    max-height: 12px;
+}
+.mobile.landscape .socialcause {
+    background: url("../images/socialcause_bg.png") no-repeat center center;
+    background-size: cover;
+}
+.mobile.landscape #social_content {
+    width: 62%;
+    margin-bottom: 5px;
+}
+.mobile.landscape #social_content #head {
+    font-size: 15px;
+}
+.mobile.landscape #social_content p {
+    font-size: 0.6em;
+}

@@ -2831,6 +2831,41 @@ textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
 #sports_content #competitions_content #social_media_icons {
     left: auto;
 }
+/* Styling pro show page */
+.pronite {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url("../images/pro_show_bg.png") no-repeat bottom center;
+    background-size: cover;
+}
+.pronite #pronite_content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#pro_content {
+    position: absolute;
+    top: 25%;
+    -webkit-transform: translate(0,-25%);
+    transform: translate(0,-25%);
+    width: 60%;
+    margin-left: 10%;
+}
+#pro_content #head {
+    font-family: 'rock_saltregular';
+    font-size: 210%;
+    -webkit-font-smoothing: subpixel-antialiased!important;
+    font-weight: 600;
+    display: block;
+    margin-bottom:  2%;
+}
+#pro_content p {
+    font-family: 'Century Gothic';
+    font-size: 25px;
+    -webkit-font-smoothing: subpixel-antialiased!important;
+    font-weight: 300;
+}
 
 .mobile .hero_section {
     background: url("../images/hero_bg_mobile.png") no-repeat center center;
@@ -2919,6 +2954,9 @@ textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
     -o-transition: all .3s; /* Opera */
     transition: all .3s;
     overflow: hidden;
+}
+.mobile.landscape .nav_bar ul {
+    top: 3%;
 }
 .mobile .nav_bar.open {
     -webkit-transform: translateY(0);
@@ -3121,7 +3159,7 @@ textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
     font-size: 14px;
 }
 .mobile #contact_details p {
-    font-size: 13px;
+    font-size: 12px;
 }
 .mobile #contact_details br {
     display: none;
@@ -3161,7 +3199,8 @@ textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
     width: 30%;
 }
 .mobile #competitions_content #social_media_icons {
-    bottom: 0;
+    display: none;
+    /*bottom: 0;*/
 }
 .mobile #wrapper_content div>#line2 {
     font-size: 35px;
@@ -3443,4 +3482,51 @@ textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
     position: relative;
     top: -50%;
     left: 14%;
+}
+.mobile.landscape #social_media_icons {
+    width: 38%;
+    bottom: 0;
+}
+.mobile.landscape #social_media_icons img {
+    width: 25%;
+}
+.mobile.landscape #social_media_icons #whatsapp img {
+    width: 30%;
+}
+.mobile.landscape .hero_section #whatsapp_tooltip {
+    right: 14%;
+    top: 83%;
+}
+.mobile.landscape .hero_section #tooltiptext::after {
+    left: 45%;
+}
+.mobile.landscape #countdown {
+    font-size: 16px;
+}
+.mobile.landscape #countdown #Days, .mobile #countdown #Seconds, .mobile #countdown #Hours {
+    font-size: 12px;
+}
+.mobile.landscape #frontpage_bg {
+    width: 70%;
+}
+.mobile.landscape .hero_section {
+    background: url("../images/hero_bg.png") no-repeat center center;
+    background-size: contain;
+}
+.mobile.landscape #about_content #first_line {
+    width: 20%;
+    -webkit-transform: translate(450px,0);
+    transform: translate(450px,0);
+}
+/* Styling pronite page */
+.mobile #pro_content {
+    width: 85%;
+    top: 30%;
+}
+.mobile #pro_content #head {
+    font-size: 25px;
+    margin-bottom: 4%;
+}
+.mobile #pro_content p {
+    font-size: 18px;
 }

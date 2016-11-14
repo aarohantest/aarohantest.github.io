@@ -2957,6 +2957,7 @@ textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
 }
 .mobile.landscape .nav_bar ul {
     top: 3%;
+    z-index: 10;
 }
 .mobile .nav_bar.open {
     -webkit-transform: translateY(0);

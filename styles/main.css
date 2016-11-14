@@ -1927,6 +1927,10 @@ a{
 /*  Styling the preloader  */
 .preloader {
     position: fixed;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
     background-color: #FFF;
     z-index: 99999;
     width: 100%;

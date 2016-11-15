@@ -1908,6 +1908,24 @@ img.mfp-img {
     font-style: normal;
 }
 @font-face {
+	font-family: 'Century Gothic';
+	src: url('../fonts/CenturyGothic.eot');
+	src: url('../fonts/CenturyGothic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/CenturyGothic.woff') format('woff'),
+		url('../fonts/CenturyGothic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Arial';
+	src: url('../fonts/Arial-Black.eot');
+	src: url('../fonts/Arial-Black.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Arial-Black.woff') format('woff'),
+		url('../fonts/Arial-Black.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+@font-face {
     font-family: 'FontAwesome';
     src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
     src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
@@ -2235,6 +2253,9 @@ a{
     background-size: 50% auto;
 }
 /* Styling asset buttons on about us page */
+#asset_wrapper_li {
+    display: none;
+}
 #asset_wrapper {
     width: 45%;
     position: relative;
@@ -2943,7 +2964,7 @@ textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
     position: absolute;
     top: 0;
     right: 0;
-    width: 45%;
+    width: 50%;
     height: 100%;
     z-index: 11; /* Added this as vmcustomscrollbar was removing a tag and it was below #about_content */
     font-family: 'rock_saltregular';
@@ -3007,7 +3028,7 @@ textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
 .mobile #about_content #asset_wrapper {
     display: none;
 }
-.mobile .nav_bar #asset_wrapper {
+/*.mobile .nav_bar #asset_wrapper {
     display: block;
     float: none;
     right: 0;
@@ -3030,6 +3051,17 @@ textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
     width: 135px;
     padding: 5px;
     max-height: 20px;
+}*/
+.mobile .nav_bar #asset_wrapper_li {
+    display: block;
+}
+.mobile .nav_bar #asset_wrapper_li>li {
+    border-top: 1px dashed #000;
+    border-bottom: 1px dashed #000;
+    margin-bottom: 0;
+}
+.mobile .nav_bar #asset_wrapper_li #after_movie {
+    border-top: none;
 }
 .mobile #images_container #images {
     top: 0;
@@ -3081,21 +3113,30 @@ textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
     width: 48%;
     max-height: 37%;
 }
+.mobile #slab_row>div>svg {
+    display: none;
+}
 .mobile #acting_slab {
     top: 0;
     left: 0;
+    background: url("../images/svg_acting_mobile_bg.png") no-repeat center bottom;
+    background-size: contain;
 }
 .mobile #music_slab {
     right: 0;
     left: auto;
     -webkit-transform: translate(0,0);
     transform: translate(0,0);
+    background: url("../images/svg_music_mobile_bg.png") no-repeat center bottom;
+    background-size: contain;
 }
 .mobile #dance_slab {
     left: 0;
     top: 50%;
     -webkit-transform: translate(0,-50%);
     transform: translate(0,-50%);
+    background: url("../images/svg_dance_mobile_bg.png") no-repeat center bottom;
+    background-size: contain;
 }
 .mobile #sports_slab {
     right: 0;
@@ -3103,16 +3144,22 @@ textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
     left: auto;
     -webkit-transform: translate(0,-50%);
     transform: translate(0,-50%);
+    background: url("../images/svg_sports_mobile_bg.png") no-repeat center bottom;
+    background-size: contain;
 }
 .mobile #online_slab {
     bottom: 0;
     left: 0;
     -webkit-transform: translate(0,0);
     transform: translate(0,0);
+    background: url("../images/svg_online_mobile_bg.png") no-repeat center bottom;
+    background-size: contain;
 }
 .mobile #finearts_slab {
     bottom: 0;
     right: 0;
+    background: url("../images/svg_finearts_mobile_bg.png") no-repeat center bottom;
+    background-size: contain;
 }
 .mobile .contact_us {
     background: url("../images/contact_us_mobile_bg.png") no-repeat center center;

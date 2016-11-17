@@ -7,6 +7,7 @@ $(document).ready(function () {
     });
     $(window).resize( function() {
         window.location.href = window.location.href;
+        response();
     });
     $(".nav_bar ul li a").on("click", function () {
         $(".nav").toggleClass("open");
@@ -38,12 +39,40 @@ $(document).ready(function () {
             documentTouchScroll: true
         });
     });
-    console.log($(window).width());
-    if ($(window).width() >= 400 && $(window).width() <= 430) {
-		$('#name').css('top','1.8em');
-        $('#email').css('top','1.8em');
-        $('#message').css('top','1.8em');
-	}
+    response();
+    function response() {
+        if ($(window).width() >= 400 && $(window).width() <= 430) {
+    		$('#name').css('top','1.8em');
+            $('#email').css('top','1.8em');
+            $('#message').css('top','1.8em');
+            $('.mobile #contact_details h2').css('font-size','16px');
+            $('.mobile #contact_details p').css('font-size','14px');
+    	}
+        if ($(window).width() >= 350 && $(window).width() <= 390) {
+    		$('#name').css('top','1.8em');
+            $('#email').css('top','1.8em');
+            $('#message').css('top','1.8em');
+            $('.mobile #contact_details h2').css('font-size','15px');
+            $('.mobile #contact_details p').css('font-size','13px');
+    	}
+        if ($(window).width() >= 700 && $(window).width() <= 750) {
+    		$('.mobile.landscape #contact_form #name').css({'top':'3.5em', 'left':'28%'});
+            $('.mobile.landscape #contact_form #email').css('top','3.9em');
+            $('.mobile.landscape #contact_form #message').css('top','3.5em');
+            $('.mobile #contact_details').css('line-height','22px');
+            $('.mobile #contact_details').css('width','30%');
+            $('.mobile.landscape #contact_details>div').css('width','100%');
+            $('.mobile.landscape #contact_details h2').css('font-size','13px');
+            $('.mobile.landscape #contact_details p').css('font-size','12px');
+            $('.mobile.landscape #slab_row>div').css('max-height','40%');
+    	}
+        if ($(window).width() >= 650 && $(window).width() <= 680) {
+            $('.mobile #contact_details').css('line-height','22px');
+            $('.mobile #contact_details').css('width','30%');
+            $('.mobile.landscape #contact_details>div').css('width','100%');
+            $('.mobile.landscape #slab_row>div').css('max-height','40%');
+    	}
+    }
     function countdown() {
         var eventDate = new Date(2017, 0, 11);
         var now = new Date();

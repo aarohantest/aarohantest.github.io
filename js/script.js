@@ -538,6 +538,8 @@ $(document).ready(function () {
             $('.mobile.landscape .nav_bar ul li').css('padding-top','8px');
             $('.mobile.landscape #about_content #first_line').css({'transform':'translate(300px,0)','width':'30%'});
             $('.mobile #competitions_content p').css('font-size','14px');
+            $('.mobile.landscape #social_content #head').css('margin-bottom','8px');
+            $('.mobile.landscape #social_content p').css('font-size','0.55em');
     	}
         if ($(window).width() >= 310 && $(window).width() <= 330) {
             $('#name').css('top','1.8em');

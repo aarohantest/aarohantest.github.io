@@ -72,6 +72,25 @@ $(document).ready(function () {
             $('.mobile.landscape #contact_details>div').css('width','100%');
             $('.mobile.landscape #slab_row>div').css('max-height','40%');
     	}
+        if ($(window).width() >= 560 && $(window).width() <= 580) {
+            $('.mobile.landscape #contact_form #name').css({'top':'2.7em', 'left':'29%','font-size':'11px'});
+            $('.mobile.landscape #contact_form #email').css({'top':'3em','font-size':'11px'});
+            $('.mobile.landscape #contact_form #message').css({'top':'2em','font-size':'11px'});
+            $('.mobile.landscape #contact_details').css('line-height','18px');
+            $('.mobile.landscape #contact_details').css({'width':'35%','top':'15px'});
+            $('.mobile.landscape #contact_details h2').css('font-size','11px');
+            $('.mobile.landscape #contact_details p').css('font-size','10px');
+            $('.mobile.landscape #contact_details>div').css('width','100%');
+            $('.mobile.landscape #slab_row>div').css('max-height','40%');
+    	}
+        if ($(window).width() >= 310 && $(window).width() <= 330) {
+            $('#name').css('top','1.8em');
+            $('#email').css('top','1.8em');
+            $('#message').css('top','1.3em');
+            $('.mobile #contact_details h2').css('font-size','12px');
+            $('.mobile #contact_details p').css('font-size','10px');
+            $('.mobile.css-320 .nav_bar ul').css('top','0');
+    	}
     }
     function countdown() {
         var eventDate = new Date(2017, 0, 11);

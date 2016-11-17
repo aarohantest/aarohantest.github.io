@@ -34,9 +34,16 @@ $(document).ready(function () {
     });
     $.each([$("#about_content"),$("#message")], function () {
         $(this).mCustomScrollbar({
-            theme: "dark-2"
+            theme: "dark-2",
+            documentTouchScroll: true
         });
     });
+    console.log($(window).width());
+    if ($(window).width() >= 400 && $(window).width() <= 430) {
+		$('#name').css('top','1.8em');
+        $('#email').css('top','1.8em');
+        $('#message').css('top','1.8em');
+	}
     function countdown() {
         var eventDate = new Date(2017, 0, 11);
         var now = new Date();

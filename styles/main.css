@@ -3005,9 +3005,12 @@ textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
 .mobile .nav_bar ul {
     padding-top: 25px;
     position: relative;
-    top: 10%;
+    top: 6%;
     width: 100%;
     z-index: 10;
+}
+.mobile #about_content {
+    overflow-y: scroll;
 }
 .mobile #about_content #first_line {
     width: 50%;

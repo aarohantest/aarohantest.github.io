@@ -3253,7 +3253,7 @@ textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
     font-size: 20px;
 }
 .mobile #competitions_content p {
-    font-size: 16px;
+    font-size: 15px;
 }
 .mobile #competitions_list div {
     padding-top: 15px;
@@ -3582,6 +3582,10 @@ textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
     width: 20%;
     -webkit-transform: translate(450px,0);
     transform: translate(450px,0);
+}
+.mobile.landscape.css-640 #competitions_content p {
+    font-size: 14px;
+    margin-top: 20px;
 }
 /* Styling pronite page */
 .mobile #pro_content {

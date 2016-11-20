@@ -490,7 +490,6 @@ $(document).ready(function () {
         }
     });
     response();
-    console.log(sizeCalc());
     function response() {
         if ($(window).width() >= 400 && $(window).width() <= 430) {
     		$('#name').css('top','1.8em');
@@ -498,13 +497,6 @@ $(document).ready(function () {
             $('#message').css('top','1.8em');
             $('.mobile #contact_details h2').css('font-size','16px');
             $('.mobile #contact_details p').css('font-size','14px');
-    	}
-        if ($(window).width() >= 350 && $(window).width() <= 390) {
-    		$('#name').css('top','1.8em');
-            $('#email').css('top','1.8em');
-            $('#message').css('top','1.8em');
-            $('.mobile #contact_details h2').css('font-size','15px');
-            $('.mobile #contact_details p').css('font-size','13px');
     	}
         if ($(window).width() >= 700 && $(window).width() <= 750) {
     		$('.mobile.landscape #contact_form #name').css({'top':'3.5em', 'left':'28%'});
@@ -550,7 +542,7 @@ $(document).ready(function () {
             $('.mobile #contact_details p').css('font-size','10px');
             $('.mobile.css-320 .nav_bar ul').css('top','6%');
     	}
-        if (sizeCalc() >= 460 && sizeCalc() <= 490) {
+        if (sizeCalcHeight() >= 460 && sizeCalcHeight() <= 490) {
     		$('#name').css('top','0em');
             $('#email').css('top','0em');
             $('#message').css('top','0em');
@@ -568,13 +560,41 @@ $(document).ready(function () {
             $('.place4').css('z-index','16');
             $('.place5').css('z-index','15');
     	}
+        if (sizeCalcWidth() >= 350 && sizeCalcWidth() <= 370) {
+    		$('#name').css('top','0.4em');
+            $('#email').css('top','0.3em');
+            $('#message').css('top','0em');
+            $('.mobile #contact_details h2').css('font-size','12px');
+            $('.mobile #contact_details p').css('font-size','10px');
+            $('.mobile #social_content #head').css('font-size','18px');
+            $('.mobile #social_content p').css('font-size','0.85em');
+            $('.mobile .nav_bar').css('font-size','14px');
+            $('.mobile #social_media_icons>div').css('width','230px');
+            $('.mobile #social_media_icons img').css('width','28%');
+            $('.mobile #social_media_icons #whatsapp img').css('width','32%');
+            $('.mobile .nav_bar ul li').css('margin-bottom','0');
+            $('.mobile.css-320 .nav_bar #asset_wrapper_li').css({'font-size':'14px'});
+            $('.mobile #slab_row>div').css('max-height','32%');
+            $('.mobile.css-320 #slab_container #slab_row').css('top','15%');
+            $('.mobile #photo #text').css('font-size','10px');
+            $('.place1').css('z-index','20');
+            $('.place2').css('z-index','18');
+            $('.place3').css('z-index','16');
+            $('.place4').css('z-index','16');
+            $('.place5').css('z-index','15');
+    	}
     }
 });
 $(window).load(function () {
     $(".preloader").delay(2000).fadeOut("slow");
 });
-function sizeCalc() {
+function sizeCalcHeight() {
     var sizeDiff = $(window).outerHeight() - $("body").height();
     var actualSize = $(window).outerHeight() - sizeDiff;
+    return actualSize;
+}
+function sizeCalcWidth() {
+    var sizeDiff = $(window).outerWidth() - $("body").width();
+    var actualSize = $(window).outerWidth() - sizeDiff;
     return actualSize;
 }

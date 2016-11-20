@@ -466,30 +466,31 @@ $(document).ready(function () {
                 $("#acting path").attr("fill","#000");
         });
     });
-    // $("#send").click(function() {
-    //     var name = $("#name").val();
-    //     var email = $("#email").val();
-    //     var message = $("#message").val();
-    //     // $("#returnmessage").empty(); // To empty previous error/success message.
-    //     // Checking for blank fields.
-    //     if (name == '' || email == '' || message == '') {
-    //         alert("Please Fill Required Fields");
-    //     } else {
-    //         // Returns successful data submission message when the entered information is sent.
-    //         $.post("contact_form.php", {
-    //             name1: name,
-    //             email1: email,
-    //             message1: message
-    //         }, function(data) {
-    //             // $("#returnmessage").append(data); // Append returned message to message paragraph.
-    //             if (data == "Your Query has been received, We will contact you soon.") {
-    //                 alert("Your Query has been received, We will contact you soon.");
-    //                 $("#form")[0].reset(); // To reset form fields on success.
-    //             }
-    //         });
-    //     }
-    // });
+    $("#send").click(function() {
+        var name = $("#name").val();
+        var email = $("#email").val();
+        var message = $("#message").val();
+        // $("#returnmessage").empty(); // To empty previous error/success message.
+        // Checking for blank fields.
+        if (name == '' || email == '' || message == '') {
+            alert("Please Fill Required Fields");
+        } else {
+            // Returns successful data submission message when the entered information is sent.
+            $.post("contact_form.php", {
+                name1: name,
+                email1: email,
+                message1: message
+            }, function(data) {
+                // $("#returnmessage").append(data); // Append returned message to message paragraph.
+                if (data == "Your Query has been received, We will contact you soon.") {
+                    alert("Your Query has been received, We will contact you soon.");
+                    $("#form")[0].reset(); // To reset form fields on success.
+                }
+            });
+        }
+    });
     response();
+    console.log(sizeCalc());
     function response() {
         if ($(window).width() >= 400 && $(window).width() <= 430) {
     		$('#name').css('top','1.8em');
@@ -547,10 +548,33 @@ $(document).ready(function () {
             $('#message').css('top','1.3em');
             $('.mobile #contact_details h2').css('font-size','12px');
             $('.mobile #contact_details p').css('font-size','10px');
-            $('.mobile.css-320 .nav_bar ul').css('top','0');
+            $('.mobile.css-320 .nav_bar ul').css('top','6%');
+    	}
+        if (sizeCalc() >= 460 && sizeCalc() <= 490) {
+    		$('#name').css('top','0em');
+            $('#email').css('top','0em');
+            $('#message').css('top','0em');
+            $('.mobile #contact_details h2').css('font-size','12px');
+            $('.mobile #contact_details p').css('font-size','10px');
+            $('.mobile .nav_bar').css('font-size','14px');
+            $('.mobile .nav_bar ul li').css('margin-bottom','0');
+            $('.mobile.css-320 .nav_bar #asset_wrapper_li').css({'font-size':'14px'});
+            $('.mobile #slab_row>div').css('max-height','32%');
+            $('.mobile.css-320 #slab_container #slab_row').css('top','15%');
+            $('.mobile #photo #text').css('font-size','10px');
+            $('.place1').css('z-index','20');
+            $('.place2').css('z-index','18');
+            $('.place3').css('z-index','16');
+            $('.place4').css('z-index','16');
+            $('.place5').css('z-index','15');
     	}
     }
 });
 $(window).load(function () {
     $(".preloader").delay(2000).fadeOut("slow");
 });
+function sizeCalc() {
+    var sizeDiff = $(window).outerHeight() - $("body").height();
+    var actualSize = $(window).outerHeight() - sizeDiff;
+    return actualSize;
+}

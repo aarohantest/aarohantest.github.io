@@ -1,8 +1,9 @@
 <?php
     // Fetching Values from URL.
-    $name = trim($_POST['name1']);
-    $email = trim($_POST['email1']);
-    $message = trim($_POST['message1']);
+    $name = trim($_POST['name']);
+    $email = trim($_POST['email']);
+    $message = trim($_POST['message']);
+    echo $name;
     $email = filter_var($email, FILTER_SANITIZE_EMAIL); // Sanitizing E-mail address.
     // After sanitization Validation is performed
     if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -34,4 +35,5 @@
     } else {
         echo "<span>* invalid email *</span>";
     }
+
 ?>

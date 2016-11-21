@@ -542,6 +542,14 @@ $(document).ready(function () {
             $('.mobile #contact_details p').css('font-size','10px');
             $('.mobile.css-320 .nav_bar ul').css('top','6%');
     	}
+        if (sizeCalcWidth() >= 1500 && sizeCalcWidth() <= 1520) {
+            $('#name').css({'top':'1.4em','font-size':'22px'});
+            $('#email').css({'top':'2.4em','font-size':'22px'});
+            $('#message').css({'top':'1.8em','font-size':'22px'});
+            $('.mobile #contact_details h2').css('font-size','24px');
+            $('.mobile #contact_details p').css('font-size','22px');
+            $('.mobile #contact_details').css('line-height','25px');
+    	}
         if (sizeCalcHeight() >= 460 && sizeCalcHeight() <= 490) {
     		$('#name').css('top','0em');
             $('#email').css('top','0em');

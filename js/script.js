@@ -619,6 +619,51 @@ $(document).ready(function () {
             $('.place4').css('z-index','16');
             $('.place5').css('z-index','15');
     	}
+        if (sizeCalcWidth() >= 310 && sizeCalcWidth() <= 330 && sizeCalcHeight() >= 450 && sizeCalcHeight() <= 470) {
+    		$('#name').css('top','-0.5em');
+            $('#email').css('top','-0.5em');
+            $('#message').css('top','-1em');
+            $('.mobile #contact_details h2').css({'font-size':'11px','margin-bottom':'2px'});
+            $('.mobile #contact_details p').css('font-size','10px');
+            $('.mobile #social_content #head').css({'font-size':'16px','margin-bottom':'10px'});
+            $('.mobile #social_content p').css('font-size','0.75em')
+            $('.mobile #social_media_icons>div').css('width','200px');
+            $('.mobile #social_media_icons img').css('width','28%');
+            $('.mobile #pro_content #head').css('font-size','16px');
+            $('.mobile #pro_content p').css('font-size','14px');
+            $('.mobile #social_media_icons #whatsapp img').css('width','32%');
+            $('.mobile .nav_bar').css('font-size','12px');
+            $('.mobile .nav_bar ul li').css({'margin-bottom':'0','padding-top':'8px'});
+            $('.mobile.css-320 .nav_bar #asset_wrapper_li').css({'font-size':'12px'});
+            $('.mobile #slab_row>div').css('max-height','32%');
+            $('.mobile.css-320 #slab_container #slab_row').css('top','15%');
+            $('.mobile #photo #text').css('font-size','10px');
+            $('.place1').css('z-index','20');
+            $('.place2').css('z-index','18');
+            $('.place3').css('z-index','16');
+            $('.place4').css('z-index','16');
+            $('.place5').css('z-index','15');
+    	}
+        if (sizeCalcWidth() >= 404 && sizeCalcWidth() <= 424 && sizeCalcHeight() >= 618 && sizeCalcHeight() <= 638) {
+            $('#name').css('top','0.4em');
+            $('#email').css('top','0.4em');
+            $('#message').css('top','0.3em');
+            $('.mobile #contact_details h2').css('font-size','16px');
+            $('.mobile #contact_details p').css('font-size','14px');
+            $('.mobile #social_content #head').css({'font-size':'20px','margin-bottom':'10px'});
+            $('.mobile #social_content p').css('font-size','1em')
+            $('.mobile .nav_bar').css('font-size','16px');
+            $('.mobile .nav_bar ul li').css({'margin-bottom':'0','padding-top':'8px'});
+            $('.mobile.css-320 .nav_bar #asset_wrapper_li').css({'font-size':'16px'});
+            $('.mobile #slab_row>div').css('max-height','32%');
+            $('.mobile.css-320 #slab_container #slab_row').css('top','15%');
+            $('.mobile #photo #text').css('font-size','12px');
+            $('.place1').css('z-index','20');
+            $('.place2').css('z-index','18');
+            $('.place3').css('z-index','16');
+            $('.place4').css('z-index','16');
+            $('.place5').css('z-index','15');
+    	}
     }
 });
 $(window).load(function () {

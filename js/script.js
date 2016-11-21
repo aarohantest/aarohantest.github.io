@@ -489,7 +489,7 @@ $(document).ready(function () {
             });
         }
     });
-    response();
+    response();console.log(sizeCalcHeight());
     function response() {
         if ($(window).width() >= 400 && $(window).width() <= 430) {
     		$('#name').css('top','1.8em');
@@ -550,6 +550,11 @@ $(document).ready(function () {
             $('.mobile #contact_details p').css('font-size','22px');
             $('.mobile #contact_details').css('line-height','25px');
     	}
+        if (sizeCalcWidth() >= 1270 && sizeCalcWidth() <= 1290) {
+            $('#name').css({'top':'1.5em'});
+            $('#email').css({'top':'2.4em'});
+            $('#message').css({'top':'2.4em'});
+    	}
         if (sizeCalcHeight() >= 460 && sizeCalcHeight() <= 490) {
     		$('#name').css('top','0em');
             $('#email').css('top','0em');
@@ -572,6 +577,29 @@ $(document).ready(function () {
     		$('#name').css('top','0.4em');
             $('#email').css('top','0.3em');
             $('#message').css('top','0em');
+            $('.mobile #contact_details h2').css('font-size','12px');
+            $('.mobile #contact_details p').css('font-size','10px');
+            $('.mobile #social_content #head').css('font-size','18px');
+            $('.mobile #social_content p').css('font-size','0.85em');
+            $('.mobile .nav_bar').css('font-size','14px');
+            $('.mobile #social_media_icons>div').css('width','230px');
+            $('.mobile #social_media_icons img').css('width','28%');
+            $('.mobile #social_media_icons #whatsapp img').css('width','32%');
+            $('.mobile .nav_bar ul li').css('margin-bottom','0');
+            $('.mobile.css-320 .nav_bar #asset_wrapper_li').css({'font-size':'14px'});
+            $('.mobile #slab_row>div').css('max-height','32%');
+            $('.mobile.css-320 #slab_container #slab_row').css('top','15%');
+            $('.mobile #photo #text').css('font-size','10px');
+            $('.place1').css('z-index','20');
+            $('.place2').css('z-index','18');
+            $('.place3').css('z-index','16');
+            $('.place4').css('z-index','16');
+            $('.place5').css('z-index','15');
+    	}
+        if (sizeCalcWidth() >= 365 && sizeCalcWidth() <= 385 && sizeCalcHeight() >= 550 && sizeCalcHeight() <= 570) {
+    		$('#name').css('top','0em');
+            $('#email').css('top','0em');
+            $('#message').css('top','-1em');
             $('.mobile #contact_details h2').css('font-size','12px');
             $('.mobile #contact_details p').css('font-size','10px');
             $('.mobile #social_content #head').css('font-size','18px');

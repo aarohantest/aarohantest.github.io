@@ -653,7 +653,7 @@ $(document).ready(function () {
             $('.mobile #social_content #head').css({'font-size':'20px','margin-bottom':'10px'});
             $('.mobile #social_content p').css('font-size','1em')
             $('.mobile .nav_bar').css('font-size','16px');
-            $('.mobile .nav_bar ul li').css({'margin-bottom':'0','padding-top':'8px'});
+            $('.mobile .nav_bar ul li').css({'margin-bottom':'5px','padding-top':'8px'});
             $('.mobile.css-320 .nav_bar #asset_wrapper_li').css({'font-size':'16px'});
             $('.mobile #slab_row>div').css('max-height','32%');
             $('.mobile.css-320 #slab_container #slab_row').css('top','15%');

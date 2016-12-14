@@ -225,6 +225,7 @@ $(document).ready(function () {
             }
         });
     });
+    var item = $("#competitions_list #act1>a");
     $("#acting_slab").magnificPopup({
         items: [
             {
@@ -233,11 +234,13 @@ $(document).ready(function () {
                                     <span id='head'>Dramatics</span>\
                                     <p>Drama is the specific mode of fiction represented in performance.It is a loud and larger than life exchange of ideologies, catchy songs, humour, energy, emotions and the roar of audience.Drama as a form of communication is deeply rooted in the Indian tradition.This year come and showcase your talent and move the audience.</p>\
                                     <div id='competitions_list'>\
-                                        <div>\
-                                            <div><span id='head'>Dastaak</span><p>Street play competition</p></div>\
-                                            <div><span id='head'>Mad Ads</span><p>Solo acting competition</p></div>\
-                                            <div><span id='head'>PLatform</span><p>Talent hunt competition</p></div>\
-                                        </ul>\
+                                        <div id='act1'>\
+                                            <a  class='dastaak' href='#'><div><span id='head'>Dastaak</span><p style='text-align: center'>Street play competition</p></div><div id='details'>\
+                                                <p id='head'>Prize</p><p>Winner-Cash Prize of Rs.6,000</p>\
+                                            </div></a>\
+                                            <a  class='dastaak' href='#'><div><span id='head'>Improv Act</span><p style='text-align: center'>Mono acting competition</p></div><div id='details'></div></a>\
+                                            <a  class='dastaak' href='#'><div><span id='head'>PLatform</span><p style='text-align: center'>Talent hunt competition</p></div><div id='details'></div></a>\
+                                        </div>\
                                     </div>\
                                     <p>Details will be updated soon.</p>\
                                     <div id='social_media_icons'>\
@@ -249,7 +252,15 @@ $(document).ready(function () {
                             </div>"),
                 type: 'inline'
             }
-        ]
+        ],
+        callbacks: {
+            open: function() {
+                $("#competitions_content").mCustomScrollbar({
+                    theme: "dark-2",
+                    documentTouchScroll: true
+                });
+            }
+        }
     });
     $("#music_slab").magnificPopup({
         items: [
@@ -257,7 +268,7 @@ $(document).ready(function () {
                 src: $("<div id='acting_content'> \
                                 <div id='competitions_content'>\
                                     <span id='head'>Music</span>\
-                                    <p>“I don’t need to get a life, I’m a gamer, I have lots of lives!”.The ultimate gaming arena! Escape the reality and land into the virtual world of survival. Team up! Push yourself further than you have ever before to see the face of your next nemesis.</p>\
+                                    <p>A competition held to determine the best teams and the greatest voice. The ultimate platform to showcase your skills. Compose an original song or perform on an existing track in your way and mesmerize the crowd.</p>\
                                     <div id='competitions_list'>\
                                         <div>\
                                             <div><span id='head'>Humming</span><p>Solo singing competition</p></div>\
@@ -308,7 +319,7 @@ $(document).ready(function () {
                 src: $("<div id='sports_content'> \
                                 <div id='competitions_content'>\
                                     <span id='head'>Gaming & Sports</span>\
-                                    <p>A competition held to determine the best teams and greatest achivements. The ultimate platform to showcase your skills. Defeat your opponents and rise above all in this ultimate showdown.</p>\
+                                    <p>“I don’t need to get a life, I’m a gamer, I have lots of lives!”.The ultimate gaming arena! Escape the reality and land into the virtual world of survival. Team up! Push yourself further than you have ever before to see the face of your next nemesis.</p>\
                                     <div id='competitions_list'>\
                                         <div>\
                                             <div><span id='head'>Paintball</span><p>Group & solo competition</p></div>\
@@ -476,13 +487,13 @@ $(document).ready(function () {
             alert("Please Fill Required Fields");
         } else {
             // Returns successful data submission message when the entered information is sent.
-            $.post("contact_form.php", {
+            $.post("contact.php", {
                 name1: name,
                 email1: email,
                 message1: message
             }, function(data) {
                 // $("#returnmessage").append(data); // Append returned message to message paragraph.
-                if (data == "Your Query has been received, We will contact you soon.") {
+                if (data == "Message sent Successfully") {
                     alert("Your Query has been received, We will contact you soon.");
                     $("#form")[0].reset(); // To reset form fields on success.
                 }

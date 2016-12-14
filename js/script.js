@@ -235,14 +235,45 @@ $(document).ready(function () {
                                     <p>Drama is the specific mode of fiction represented in performance.It is a loud and larger than life exchange of ideologies, catchy songs, humour, energy, emotions and the roar of audience.Drama as a form of communication is deeply rooted in the Indian tradition.This year come and showcase your talent and move the audience.</p>\
                                     <div id='competitions_list'>\
                                         <div id='act1'>\
-                                            <a  class='dastaak' href='#'><div><span id='head'>Dastaak</span><p style='text-align: center'>Street play competition</p></div><div id='details'>\
+                                            <a  class='dastaak'><div><span id='head'>Dastaak</span><p style='text-align: center'>Street play competition</p></div><div id='details'>\
                                                 <p id='head'>Prize</p><p>Winner-Cash Prize of Rs.6,000</p>\
+                                                <p id='head'>Entry fee</p><p>Rs.600</p>\
+                                                <p id='head'>Rules</p>\
+                                                <ol>\
+                                                    <li>The time limit for the performance, from empty stage to empty stage, is 15 minutes.</li>\
+                                                    <li>The maximum group limit is 16.</li>\
+                                                    <li>Naked flames and live animals are not allowed for the performance.</li>\
+                                                    <li>Any props or other materials that have to be used will have to be managed by the participating team itself. The organizers will not provide any properties or materials.</li>\
+                                                    <li>Teams exceeding 15 minutes will lose all the points allocated for the time criteria and any other points lost will be by the discretion of the judges.</li>\
+                                                    <li>In case your performance is interrupted due to any commotion caused in the performance area or any audio/light related problem then the team will be allowed to restart or continue the performance based on their preference and the judge's discretion.</li>\
+                                                    <li>Due to any unforeseeable event, if the participating team has to stop their performance, any one of the team members can signal a person from the organising team. Restarting, continuing or terminating the performance will then be by the judge's discretion.</li>\
+                                                    <li>If the participating team does not show up at their allocated time then the team will be disqualified. In case of unavoidable circumstances please contact the organizers. The participation fee will not be refunded under any circumstances.</li>\
+                                                    <li>Decisions made by the organizers and judges will be binding and final.</li>\
+                                                </ol>\
                                             </div></a>\
-                                            <a  class='dastaak' href='#'><div><span id='head'>Improv Act</span><p style='text-align: center'>Mono acting competition</p></div><div id='details'></div></a>\
-                                            <a  class='dastaak' href='#'><div><span id='head'>PLatform</span><p style='text-align: center'>Talent hunt competition</p></div><div id='details'></div></a>\
+                                            <a  class='improv'><div><span id='head'>Improv Act</span><p style='text-align: center'>Mono acting competition</p></div>\
+                                                <div id='details'>\
+                                                <p id='head'>Prize</p><p>Winner-Cash Prize of Rs.3,000</p>\
+                                                <p id='head'>Entry fee</p><p>Rs.100</p>\
+                                                </div></a>\
+                                            <a  class='platform'><div><span id='head'>PLatform</span><p style='text-align: center'>Talent hunt competition</p></div>\
+                                                <div id='details'>\
+                                                <p id='head'>Prize</p><p>Winner-Cash Prize of Rs.5,000</p>\
+                                                <p id='head'>Entry fee</p><p>Rs.300</p>\
+                                                <p id='head'>Rules</p>\
+                                                <ol>\
+                                                    <li>The time limit for the performance, from empty stage to empty stage, is 5 minutes.</li>\
+                                                    <li>Naked flames and live animals are not allowed for the performance.</li>\
+                                                    <li>Any props or other materials that have to be used will have to be managed by the participating team itself. The organizers will not provide any properties or materials.</li>\
+                                                    <li>Participants exceeding 15 minutes will lose all the points allocated for the time criteria and any other points lost will be by the discretion of the judges.</li>\
+                                                    <li>In case your performance is interrupted due to any commotion caused in the performance area or any audio/light related problem then the team will be allowed to restart or continue the performance based on their preference and the judge's discretion.</li>\
+                                                    <li>Due to any unforeseeable event, if the participating team has to stop their performance, any one of the team members can signal a person from the organising team. Restarting, continuing or terminating the performance will then be by the judge's discretion.</li>\
+                                                    <li>If the participating team does not show up at their allocated time then the team will be disqualified. In case of unavoidable circumstances please contact the organizers. The participation fee will not be refunded under any circumstances.</li>\
+                                                    <li>Decisions made by the organizers and judges will be binding and final.</li>\
+                                                </ol>\
+                                                </div></a>\
                                         </div>\
                                     </div>\
-                                    <p>Details will be updated soon.</p>\
                                     <div id='social_media_icons'>\
                                         <ul>\
                                             <li id='facebook'><a href='https://www.facebook.com/aarohanfest/' target='_blank'><img src='images/facebook_icon.png' alt='https://www.facebook.com/aarohanfest/'></a></li>\

@@ -302,11 +302,39 @@ $(document).ready(function () {
                                     <p>A competition held to determine the best teams and the greatest voice. The ultimate platform to showcase your skills. Compose an original song or perform on an existing track in your way and mesmerize the crowd.</p>\
                                     <div id='competitions_list'>\
                                         <div>\
-                                            <div><span id='head'>Humming</span><p>Solo singing competition</p></div>\
-                                            <div><span id='head'>Band wars</span><p>Rock band competition</p></div>\
+                                            <a class='hum'><div><span id='head'>Humming</span><p style='text-align: center'>Solo singing competition</p></div>\
+                                                <div id='details'>\
+                                                <p id='head'>Prize</p><p>Winner-Cash Prize of Rs.5,000</p>\
+                                                <p id='head'>Entry fee</p><p>Rs.300</p>\
+                                                <p id='head'>Rules</p>\
+                                                <ol>\
+                                                    <li>The time limit for the performance, from empty stage to empty stage, is 3 minutes.</li>\
+                                                    <li>Please get a copy of your karaoke track (if you are using any) on a CD and flash drive. The flash drive will be tried and if not then we'll use the CD. As a backup, it would be advisable to keep a copy on your phone and on the mail too.</li>\
+                                                    <li>Any instruments or other materials that have to be used will have to be managed by the participating team itself.</li>\
+                                                    <li>Performances exceeding 3 minutes will lose all the points allocated for the time criteria and any other points lost will be by the discretion of the judges.</li>\
+                                                    <li>In case your performance is interrupted due to any commotion caused in the performance area or any audio/light related problem then the team will be allowed to restart or continue the performance based on their preference and the judge's discretion.</li>\
+                                                    <li>Due to any unforeseeable event, if the participating team has to stop their performance, any one of the team members can signal a person from the organising team. Restarting, continuing or terminating the performance will then be by the judge's discretion.</li>\
+                                                    <li>If the participating team does not show up at their allocated time then the team will be disqualified. In case of unavoidable circumstances please contact the organizers. The participation fee will not be refunded under any circumstances.</li>\
+                                                    <li>Decisions made by the organizers and judges will be binding and final.</li>\
+                                                </ol>\
+                                                </div></a>\
+                                            <a class='bang'><div><span id='head'>Head Bang</span><p style='text-align: center'>Rock band competition</p></div>\
+                                                <div id='details'>\
+                                                <p id='head'>Prize</p><p>Winner-Cash Prize of Rs.15,000</p>\
+                                                <p id='head'>Entry fee</p><p>Rs.1,200</p>\
+                                                <p id='head'>Rules</p>\
+                                                <ol>\
+                                                    <li>The time limit for the performance, from empty stage to empty stage, is 15 minutes.</li>\
+                                                    <li>The organizers will provide teams with a drum set. Any other instrument to be used will have to be managed by the participating team itself.</li>\
+                                                    <li>Teams exceeding 15 minutes will lose all the points allocated for the time criteria and any other points lost will be by the discretion of the judges.</li>\
+                                                    <li>In case your performance is interrupted due to any commotion caused in the performance area or any audio/light related problem then the team will be allowed to restart or continue the performance based on their preference and the judge's discretion.</li>\
+                                                    <li>Due to any unforeseeable event, if the participating team has to stop their performance, any one of the team members can signal a person from the organising team. Restarting, continuing or terminating the performance will then be by the judge's discretion.</li>\
+                                                    <li>If the participating team does not show up at their allocated time then the team will be disqualified. In case of unavoidable circumstances please contact the organizers. The participation fee will not be refunded under any circumstances.</li>\
+                                                    <li>Decisions made by the organizers and judges will be binding and final.</li>\
+                                                </ol>\
+                                                </div></a>\
                                         </ul>\
                                     </div>\
-                                    <p>Details will be updated soon.</p>\
                                     <div id='social_media_icons'>\
                                         <ul>\
                                             <li id='facebook'><a href='https://www.facebook.com/aarohanfest/' target='_blank'><img src='images/facebook_icon.png' alt='https://www.facebook.com/aarohanfest/'></a></li>\
@@ -316,7 +344,15 @@ $(document).ready(function () {
                             </div>"),
                 type: 'inline'
             }
-        ]
+        ],
+        callbacks: {
+            open: function() {
+                $("#competitions_content").mCustomScrollbar({
+                    theme: "dark-2",
+                    documentTouchScroll: true
+                });
+            }
+        }
     });
     $("#dance_slab").magnificPopup({
         items: [
@@ -327,12 +363,44 @@ $(document).ready(function () {
                                     <p>Dance is a performance art form consisting of purposefully selected sequences of human movement. This movement has aesthetic and symbolic value, and is acknowledged as dance by performers and observers within a particular culture.This year come and showcase your talent and dazzle the audience.</p>\
                                     <div id='competitions_list'>\
                                         <div>\
-                                            <div><span id='head'>In-Sync</span><p>Group dance competition</p></div>\
-                                            <div><span id='head'>Inner Flame</span><p>Solo dance competition</p></div>\
+                                            <a class='insy'><div><span id='head'>In-Sync</span><p style='text-align: center'>Group dance competition</p></div>\
+                                                <div id='details'>\
+                                                <p id='head'>Prize</p><p>Winner-Cash Prize of Rs.10,000</p>\
+                                                <p id='head'>Entry fee</p><p>Rs.800</p>\
+                                                <p id='head'>Rules</p>\
+                                                <ol>\
+                                                    <li>The time limit for the performance, from empty stage to empty stage, is 8 minutes.</li>\
+                                                    <li>The maximum group limit is 16.</li>\
+                                                    <li>Please get a copy of your track on a CD and flash drive. The flash drive will be tried and if not then we'll use the CD. As a backup, it would be advisable to keep a copy on your phone and on the mail too.</li>\
+                                                    <li>Naked flames and live animals are not allowed for the performance.</li>\
+                                                    <li>Any props or other materials that have to be used will have to be managed by the participating team itself. The organizers will not provide any properties or materials.</li>\
+                                                    <li>Teams exceeding 10 minutes will lose all the points allocated for the time criteria and any other points lost will be by the discretion of the judges.</li>\
+                                                    <li>In case your performance is interrupted due to any commotion caused in the performance area or any audio/light related problem then the team will be allowed to restart or continue the performance based on their preference and the judge's discretion.</li>\
+                                                    <li>Due to any unforeseeable event, if the participating team has to stop their performance, any one of the team members can signal a person from the organising team. Restarting, continuing or terminating the performance will then be by the judge's discretion.</li>\
+                                                    <li>If the participating team does not show up at their allocated time then the team will be disqualified. In case of unavoidable circumstances please contact the organizers. The participation fee will not be refunded under any circumstances.</li>\
+                                                    <li>Decisions made by the organizers and judges will be binding and final.</li>\
+                                                </ol>\
+                                                </div></a>\
+                                            <a class='infla'><div><span id='head'>Inner Flame</span><p style='text-align: center'>Solo dance competition</p></div>\
+                                                <div id='details'>\
+                                                <p id='head'>Prize</p><p>Winner-Cash Prize of Rs.5,000</p>\
+                                                <p id='head'>Entry fee</p><p>Rs.300</p>\
+                                                <p id='head'>Rules</p>\
+                                                <ol>\
+                                                    <li>The time limit for the performance, from empty stage to empty stage, is 5 minutes.</li>\
+                                                    <li>Please get a copy of your track on a CD and flash drive. The flash drive will be tried and if not then we'll use the CD. As a backup, it would be advisable to keep a copy on your phone and on the mail too.</li>\
+                                                    <li>Naked flames and live animals are not allowed for the performance.</li>\
+                                                    <li>Any props or other materials that have to be used will have to be managed by the participating team itself. The organizers will not provide any properties or materials.</li>\
+                                                    <li>Performances exceeding 5 minutes will lose all the points allocated for the time criteria and any other points lost will be by the discretion of the judges.</li>\
+                                                    <li>In case your performance is interrupted due to any commotion caused in the performance area or any audio/light related problem then the team will be allowed to restart or continue the performance based on their preference and the judge's discretion.</li>\
+                                                    <li>Due to any unforeseeable event, if the participating team has to stop their performance, any one of the team members can signal a person from the organising team. Restarting, continuing or terminating the performance will then be by the judge's discretion.</li>\
+                                                    <li>If the participating team does not show up at their allocated time then the team will be disqualified. In case of unavoidable circumstances please contact the organizers. The participation fee will not be refunded under any circumstances.</li>\
+                                                    <li>Decisions made by the organizers and judges will be binding and final.</li>\
+                                                </ol>\
+                                                </div></a>\
                                             <!--<div><span id='head'>Foot Loose</span><p>Street dance competition</p></div>-->\
                                         </ul>\
                                     </div>\
-                                    <p>Details will be updated soon.</p>\
                                     <div id='social_media_icons'>\
                                         <ul>\
                                             <li id='facebook'><a href='https://www.facebook.com/aarohanfest/' target='_blank'><img src='images/facebook_icon.png' alt='https://www.facebook.com/aarohanfest/'></a></li>\
@@ -342,7 +410,15 @@ $(document).ready(function () {
                             </div>"),
                 type: 'inline'
             }
-        ]
+        ],
+        callbacks: {
+            open: function() {
+                $("#competitions_content").mCustomScrollbar({
+                    theme: "dark-2",
+                    documentTouchScroll: true
+                });
+            }
+        }
     });
     $("#sports_slab").magnificPopup({
         items: [
@@ -360,7 +436,6 @@ $(document).ready(function () {
                                             <div><span id='head'>Fifa 2015</span><p>Solo competition</p></div>\
                                         </ul>\
                                     </div>\
-                                    <p>Details will be updated soon.</p>\
                                     <div id='social_media_icons'>\
                                         <ul>\
                                             <li id='facebook'><a href='https://www.facebook.com/aarohanfest/' target='_blank'><img src='images/facebook_icon.png' alt='https://www.facebook.com/aarohanfest/'></a></li>\
@@ -370,7 +445,15 @@ $(document).ready(function () {
                             </div>"),
                 type: 'inline'
             }
-        ]
+        ],
+        callbacks: {
+            open: function() {
+                $("#competitions_content").mCustomScrollbar({
+                    theme: "dark-2",
+                    documentTouchScroll: true
+                });
+            }
+        }
     });
     $("#online_slab").magnificPopup({
         items: [
@@ -381,12 +464,89 @@ $(document).ready(function () {
                                     <p>A competition held to showcase your creative mind.It is an exchange of ideologies, catchy phrases, humour, energy, emotions and imagination.</p>\
                                     <div id='competitions_list'>\
                                         <div>\
-                                            <div><span id='head'>Cursor stroke</span><p>Graphic design competition</p></div>\
-                                            <div><span id='head'>Capture</span><p>Photography competition</p></div>\
-                                            <div><span id='head'>Lit up</span><p>Creative writing competition</p></div>\
+                                            <a class='curstroke'><div><span id='head'>Cursor stroke</span><p style='text-align:center'>Graphic design competition</p></div>\
+                                                <div id='details'>\
+                                                <p id='head'>Prize</p><p>Winner-Cash Prize of Rs.2,500</p>\
+                                                <p id='head'>Entry fee</p><p>Free</p>\
+                                                <p id='head'>Theme</p><p>Humor.</p>\
+                                                <p id='head'>Rules</p>\
+                                                <ol>\
+                                                    <li>The entry can be hand drawn or made on a PC.</li>\
+                                                    <li>One entry per participant.</li>\
+                                                    <li style='list-style:none'>Entries will be evaluated on the basis of:\
+                                                        <ol>\
+                                                            <li>Relevance to theme.</li>\
+                                                            <li>Originality of ideas.</li>\
+                                                            <li>Design.</li>\
+                                                            <li>Content.</li>\
+                                                            <li>Visual Impact.</li>\
+                                                        </ol>\
+                                                    </li>\
+                                                </ol>\
+                                                </div></a>\
+                                            <a class='capt'><div><span id='head'>Capture</span><p style='text-align: center'>Photography competition</p></div>\
+                                                <div id='details'>\
+                                                <p id='head'>Prize</p><p>Winner-Cash Prize of Rs.2,500</p>\
+                                                <p id='head'>Entry fee</p><p>Free</p>\
+                                                <p id='head'>Theme</p><p>Harmony.</p>\
+                                                <p id='head'>Rules</p>\
+                                                <ol>\
+                                                    <li>The camera resolution should be more than 5MP.</li>\
+                                                    <li>One entry per participant.</li>\
+                                                    <li>If the photo is edited the participant must mail the original as well as the edited photograph.</li>\
+                                                    <li>Participant may include description of the photo in the mail content, not the photo.</li>\
+                                                    <li style='list-style:none'>Entries will be evaluated on the basis of:\
+                                                        <ol>\
+                                                            <li>Relevance to theme.</li>\
+                                                            <li>Creative ideation.</li>\
+                                                            <li>Composition, arrangement.</li>\
+                                                            <li>Focus, sharpness and other technical details.</li>\
+                                                        </ol>\
+                                                    </li>\
+                                                </ol>\
+                                                </div></a>\
+                                            <a class='litt'><div><span id='head'>Lit up</span><p style='text-align: center'>Creative writing competition</p></div>\
+                                                <div id='details'>\
+                                                <p id='head'>Prize</p><p>Winner-Cash Prize of Rs.2,500</p>\
+                                                <p id='head'>Entry fee</p><p>Free</p>\
+                                                <p id='head'>Theme</p><p>Outdated.</p>\
+                                                <p id='head'>Rules</p>\
+                                                <ol>\
+                                                    <li>Languages allowed :- English, Marathi or Hindi.</li>\
+                                                    <li>Word limit - 1500 words.</li>\
+                                                    <li>Genre - Fiction/Non-Fiction/Any other.</li>\
+                                                    <li>One entry per participant.</li>\
+                                                    <li style='list-style:none'>Entries will be evaluated on the basis of:\
+                                                        <ol>\
+                                                            <li>Originality.</li>\
+                                                            <li>Execution.</li>\
+                                                            <li>Form.</li>\
+                                                        </ol>\
+                                                    </li>\
+                                                </ol>\
+                                                </div></a>\
+                                            <a class='short'><div><span id='head'>Short Film</span><p style='text-align: center'>Film making competition</p></div>\
+                                                <div id='details'>\
+                                                <p id='head'>Prize</p><p>Winner-Cash Prize of Rs.2,500</p>\
+                                                <p id='head'>Entry fee</p><p>Free</p>\
+                                                <p id='head'>Theme</p><p>No theme: Open to you imagination.</p>\
+                                                <p id='head'>Rules</p>\
+                                                <ol>\
+                                                    <li>Time limit is 20 minutes.</li>\
+                                                    <li style='list-style:none'>Entries will be evaluated on the basis of:\
+                                                        <ol>\
+                                                            <li>Screenplay.</li>\
+                                                            <li>Story.</li>\
+                                                            <li>Cinematography.</li>\
+                                                            <li>Editing.</li>\
+                                                            <li>Acting.</li>\
+                                                            <li>Direction.</li>\
+                                                        </ol>\
+                                                    </li>\
+                                                </ol>\
+                                                </div></a>\
                                         </ul>\
                                     </div>\
-                                    <p>Details will be updated soon.</p>\
                                     <div id='social_media_icons'>\
                                         <ul>\
                                             <li id='facebook'><a href='https://www.facebook.com/aarohanfest/' target='_blank'><img src='images/facebook_icon.png' alt='https://www.facebook.com/aarohanfest/'></a></li>\
@@ -396,7 +556,15 @@ $(document).ready(function () {
                             </div>"),
                 type: 'inline'
             }
-        ]
+        ],
+        callbacks: {
+            open: function() {
+                $("#competitions_content").mCustomScrollbar({
+                    theme: "dark-2",
+                    documentTouchScroll: true
+                });
+            }
+        }
     });
     $("#finearts_slab").magnificPopup({
         items: [
@@ -407,10 +575,23 @@ $(document).ready(function () {
                                     <p>A competition held to showcase your creative mind.It is an exchange of ideologies, catchy phrases, humour, energy, emotions and imagination.Move the audience with colors or just plain old black and white.</p>\
                                     <div id='competitions_list'>\
                                         <div>\
-                                            <div><span id='head'>Art Marathon</span><p>Spot painting competition</p></div>\
+                                            <a class='artmar'><div><span id='head'>Art Maestro</span><p style='text-align: center'>Spot painting competition</p></div>\
+                                                <div id='details'>\
+                                                <p id='head'>Prize</p><p>Winner-Cash Prize of Rs.3,000</p>\
+                                                <p id='head'>Entry fee</p><p>Rs.200</p>\
+                                                <p id='head'>Rules</p>\
+                                                <ol>\
+                                                    <li>The time limit for the performance is 40 minutes.</li>\
+                                                    <li>The organizers will provide the canvas, poster colours, charcoal, pencils (4B, 2B, HB), eraser, brushes (size 3) and water for the competition.</li>\
+                                                    <li>Participants exceeding 5 minutes will lose all the points allocated for the time criteria and any other points lost will be by the discretion of the judges.</li>\
+                                                    <li>In case your performance is interrupted due to any problem then you will be allowed to restart or continue the performance based on the organizers’ preference and the judge's discretion.</li>\
+                                                    <li>Due to any unforeseeable event, if the participating team has to stop their performance, any one of the team members can signal a person from the organising team. Restarting, continuing or terminating the performance will then be by the judge's discretion.</li>\
+                                                    <li>If the participating team does not show up at their allocated time then the team will be disqualified. In case of unavoidable circumstances please contact the organizers. The participation fee will not be refunded under any circumstances.</li>\
+                                                    <li>Decisions made by the organizers and judges will be binding and final.</li>\
+                                                </ol>\
+                                                </div></a>\
                                         </ul>\
                                     </div>\
-                                    <p>Details will be updated soon.</p>\
                                     <div id='social_media_icons'>\
                                         <ul>\
                                             <li id='facebook'><a href='https://www.facebook.com/aarohanfest/' target='_blank'><img src='images/facebook_icon.png' alt='https://www.facebook.com/aarohanfest/'></a></li>\
@@ -420,7 +601,15 @@ $(document).ready(function () {
                             </div>"),
                 type: 'inline'
             }
-        ]
+        ],
+        callbacks: {
+            open: function() {
+                $("#competitions_content").mCustomScrollbar({
+                    theme: "dark-2",
+                    documentTouchScroll: true
+                });
+            }
+        }
     });
     // $("#after_movie").magnificPopup({
     //     items: [

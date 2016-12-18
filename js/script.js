@@ -236,6 +236,8 @@ $(document).ready(function () {
                                     <div id='competitions_list'>\
                                         <div id='act1'>\
                                             <a  class='dastaak'><div><span id='head'>Dastaak</span><p style='text-align: center'>Street play competition</p></div><div id='details'>\
+                                            <div id=con>\
+                                                <a id='reg_button' href='registration.html' style='cursor: pointer' target='_blank'><img src='images/register_button.png'></a>\
                                                 <p id='head'>Prize</p><p>Winner-Cash Prize of Rs.6,000</p>\
                                                 <p id='head'>Entry fee</p><p>Rs.600</p>\
                                                 <p id='head'>Rules</p>\
@@ -250,14 +252,20 @@ $(document).ready(function () {
                                                     <li>If the participating team does not show up at their allocated time then the team will be disqualified. In case of unavoidable circumstances please contact the organizers. The participation fee will not be refunded under any circumstances.</li>\
                                                     <li>Decisions made by the organizers and judges will be binding and final.</li>\
                                                 </ol>\
+                                            </div>\
                                             </div></a>\
-                                            <a  class='improv'><div><span id='head'>Improv Act</span><p style='text-align: center'>Mono acting competition</p></div>\
+                                            <a  class='improv'><div><span id='head'>Spotlight</span><p style='text-align: center'>Mono acting competition</p></div>\
                                                 <div id='details'>\
-                                                <p id='head'>Prize</p><p>Winner-Cash Prize of Rs.3,000</p>\
-                                                <p id='head'>Entry fee</p><p>Rs.100</p>\
+                                                <div id='con'>\
+                                                    <a id='reg_button' href='registration.html' style='cursor: pointer' target='_blank'><img src='images/register_button.png'></a>\
+                                                    <p id='head'>Prize</p><p>Winner-Cash Prize of Rs.3,000</p>\
+                                                    <p id='head'>Entry fee</p><p>Rs.100</p>\
+                                                </div>\
                                                 </div></a>\
                                             <a  class='platform'><div><span id='head'>PLatform</span><p style='text-align: center'>Talent hunt competition</p></div>\
                                                 <div id='details'>\
+                                                <div id='con'>\
+                                                <a id='reg_button' href='registration.html' style='cursor: pointer' target='_blank'><img src='images/register_button.png'></a>\
                                                 <p id='head'>Prize</p><p>Winner-Cash Prize of Rs.5,000</p>\
                                                 <p id='head'>Entry fee</p><p>Rs.300</p>\
                                                 <p id='head'>Rules</p>\
@@ -271,6 +279,7 @@ $(document).ready(function () {
                                                     <li>If the participating team does not show up at their allocated time then the team will be disqualified. In case of unavoidable circumstances please contact the organizers. The participation fee will not be refunded under any circumstances.</li>\
                                                     <li>Decisions made by the organizers and judges will be binding and final.</li>\
                                                 </ol>\
+                                                </div>\
                                                 </div></a>\
                                         </div>\
                                     </div>\
@@ -304,6 +313,8 @@ $(document).ready(function () {
                                         <div>\
                                             <a class='hum'><div><span id='head'>Humming</span><p style='text-align: center'>Solo singing competition</p></div>\
                                                 <div id='details'>\
+                                                <div id='con'>\
+                                                <a id='reg_button' href='registration.html' style='cursor: pointer' target='_blank'><img src='images/register_button.png'></a>\
                                                 <p id='head'>Prize</p><p>Winner-Cash Prize of Rs.5,000</p>\
                                                 <p id='head'>Entry fee</p><p>Rs.300</p>\
                                                 <p id='head'>Rules</p>\
@@ -317,9 +328,12 @@ $(document).ready(function () {
                                                     <li>If the participating team does not show up at their allocated time then the team will be disqualified. In case of unavoidable circumstances please contact the organizers. The participation fee will not be refunded under any circumstances.</li>\
                                                     <li>Decisions made by the organizers and judges will be binding and final.</li>\
                                                 </ol>\
+                                                </div>\
                                                 </div></a>\
                                             <a class='bang'><div><span id='head'>Head Bang</span><p style='text-align: center'>Rock band competition</p></div>\
                                                 <div id='details'>\
+                                                <div id='con'>\
+                                                <a id='reg_button' href='registration.html' style='cursor: pointer' target='_blank'><img src='images/register_button.png'></a>\
                                                 <p id='head'>Prize</p><p>Winner-Cash Prize of Rs.15,000</p>\
                                                 <p id='head'>Entry fee</p><p>Rs.1,200</p>\
                                                 <p id='head'>Rules</p>\
@@ -332,6 +346,7 @@ $(document).ready(function () {
                                                     <li>If the participating team does not show up at their allocated time then the team will be disqualified. In case of unavoidable circumstances please contact the organizers. The participation fee will not be refunded under any circumstances.</li>\
                                                     <li>Decisions made by the organizers and judges will be binding and final.</li>\
                                                 </ol>\
+                                                </div>\
                                                 </div></a>\
                                         </ul>\
                                     </div>\
@@ -365,7 +380,9 @@ $(document).ready(function () {
                                         <div>\
                                             <a class='insy'><div><span id='head'>In-Sync</span><p style='text-align: center'>Group dance competition</p></div>\
                                                 <div id='details'>\
-                                                <p id='head'>Prize</p><p>Winner-Cash Prize of Rs.10,000</p>\
+                                                <div id='con'>\
+                                                <a id='reg_button' href='registration.html' style='cursor: pointer' target='_blank'><img src='images/register_button.png'></a>\
+                                                <p id='head'>Prize</p><p>Winner-Cash Prize of Rs.13,000</p>\
                                                 <p id='head'>Entry fee</p><p>Rs.800</p>\
                                                 <p id='head'>Rules</p>\
                                                 <ol>\
@@ -380,9 +397,12 @@ $(document).ready(function () {
                                                     <li>If the participating team does not show up at their allocated time then the team will be disqualified. In case of unavoidable circumstances please contact the organizers. The participation fee will not be refunded under any circumstances.</li>\
                                                     <li>Decisions made by the organizers and judges will be binding and final.</li>\
                                                 </ol>\
+                                                </div>\
                                                 </div></a>\
                                             <a class='infla'><div><span id='head'>Inner Flame</span><p style='text-align: center'>Solo dance competition</p></div>\
                                                 <div id='details'>\
+                                                <div id='con'>\
+                                                <a id='reg_button' href='registration.html' style='cursor: pointer' target='_blank'><img src='images/register_button.png'></a>\
                                                 <p id='head'>Prize</p><p>Winner-Cash Prize of Rs.5,000</p>\
                                                 <p id='head'>Entry fee</p><p>Rs.300</p>\
                                                 <p id='head'>Rules</p>\
@@ -397,6 +417,7 @@ $(document).ready(function () {
                                                     <li>If the participating team does not show up at their allocated time then the team will be disqualified. In case of unavoidable circumstances please contact the organizers. The participation fee will not be refunded under any circumstances.</li>\
                                                     <li>Decisions made by the organizers and judges will be binding and final.</li>\
                                                 </ol>\
+                                                </div>\
                                                 </div></a>\
                                             <!--<div><span id='head'>Foot Loose</span><p>Street dance competition</p></div>-->\
                                         </ul>\
@@ -429,11 +450,14 @@ $(document).ready(function () {
                                     <p>“I don’t need to get a life, I’m a gamer, I have lots of lives!”.The ultimate gaming arena! Escape the reality and land into the virtual world of survival. Team up! Push yourself further than you have ever before to see the face of your next nemesis.</p>\
                                     <div id='competitions_list'>\
                                         <div>\
-                                            <div><span id='head'>Paintball</span><p>Group & solo competition</p></div>\
-                                            <div><span id='head'>Box Football</span><p>Group competition</p></div>\
-                                            <div><span id='head'>Dota 2</span><p>Group competition</p></div>\
-                                            <div><span id='head'>Counter Strike</span><p>Group competition</p></div>\
-                                            <div><span id='head'>Fifa 2015</span><p>Solo competition</p></div>\
+                                        <div id='con' style='margin-bottom: 40px;'>\
+                                            <div><span id='head'>Paintball</span><p style='text-align: center;'>Group & solo competition</p></div>\
+                                            <div><span id='head'>Box Football</span><p style='text-align: center;'>Group competition</p></div>\
+                                            <div><span id='head'>Dota 2</span><p style='text-align: center;'>Group competition</p></div>\
+                                            <div><span id='head'>Counter Strike</span><p style='text-align: center;'>Group competition</p></div>\
+                                            <div><span id='head'>Fifa 2015</span><p style='text-align: center;'>Solo competition</p></div>\
+                                        </div>\
+                                        <a id='reg_butt' href='registration.html' style='cursor: pointer' target='_blank'><img src='images/register_button.png'></a>\
                                         </ul>\
                                     </div>\
                                     <div id='social_media_icons'>\
@@ -466,6 +490,8 @@ $(document).ready(function () {
                                         <div>\
                                             <a class='curstroke'><div><span id='head'>Cursor stroke</span><p style='text-align:center'>Graphic design competition</p></div>\
                                                 <div id='details'>\
+                                                <div id='con'>\
+                                                <a id='reg_button' href='registration.html' style='cursor: pointer' target='_blank'><img src='images/register_button.png'></a>\
                                                 <p id='head'>Prize</p><p>Winner-Cash Prize of Rs.2,500</p>\
                                                 <p id='head'>Entry fee</p><p>Free</p>\
                                                 <p id='head'>Theme</p><p>Humor.</p>\
@@ -483,9 +509,12 @@ $(document).ready(function () {
                                                         </ol>\
                                                     </li>\
                                                 </ol>\
+                                                </div>\
                                                 </div></a>\
                                             <a class='capt'><div><span id='head'>Capture</span><p style='text-align: center'>Photography competition</p></div>\
                                                 <div id='details'>\
+                                                <div id='con'>\
+                                                <a id='reg_button' href='registration.html' style='cursor: pointer' target='_blank'><img src='images/register_button.png'></a>\
                                                 <p id='head'>Prize</p><p>Winner-Cash Prize of Rs.2,500</p>\
                                                 <p id='head'>Entry fee</p><p>Free</p>\
                                                 <p id='head'>Theme</p><p>Harmony.</p>\
@@ -504,9 +533,12 @@ $(document).ready(function () {
                                                         </ol>\
                                                     </li>\
                                                 </ol>\
+                                                </div>\
                                                 </div></a>\
                                             <a class='litt'><div><span id='head'>Lit up</span><p style='text-align: center'>Creative writing competition</p></div>\
                                                 <div id='details'>\
+                                                <div id='con'>\
+                                                <a id='reg_button' href='registration.html' style='cursor: pointer' target='_blank'><img src='images/register_button.png'></a>\
                                                 <p id='head'>Prize</p><p>Winner-Cash Prize of Rs.2,500</p>\
                                                 <p id='head'>Entry fee</p><p>Free</p>\
                                                 <p id='head'>Theme</p><p>Outdated.</p>\
@@ -524,9 +556,12 @@ $(document).ready(function () {
                                                         </ol>\
                                                     </li>\
                                                 </ol>\
+                                                </div>\
                                                 </div></a>\
                                             <a class='short'><div><span id='head'>Short Film</span><p style='text-align: center'>Film making competition</p></div>\
                                                 <div id='details'>\
+                                                <div id='con'>\
+                                                <a id='reg_button' href='registration.html' style='cursor: pointer' target='_blank'><img src='images/register_button.png'></a>\
                                                 <p id='head'>Prize</p><p>Winner-Cash Prize of Rs.2,500</p>\
                                                 <p id='head'>Entry fee</p><p>Free</p>\
                                                 <p id='head'>Theme</p><p>No theme: Open to you imagination.</p>\
@@ -544,6 +579,7 @@ $(document).ready(function () {
                                                         </ol>\
                                                     </li>\
                                                 </ol>\
+                                                </div>\
                                                 </div></a>\
                                         </ul>\
                                     </div>\
@@ -577,6 +613,8 @@ $(document).ready(function () {
                                         <div>\
                                             <a class='artmar'><div><span id='head'>Art Maestro</span><p style='text-align: center'>Spot painting competition</p></div>\
                                                 <div id='details'>\
+                                                <div id='con'>\
+                                                <a id='reg_button' href='registration.html' style='cursor: pointer'><img src='images/register_button.png'></a>\
                                                 <p id='head'>Prize</p><p>Winner-Cash Prize of Rs.3,000</p>\
                                                 <p id='head'>Entry fee</p><p>Rs.200</p>\
                                                 <p id='head'>Rules</p>\
@@ -589,6 +627,7 @@ $(document).ready(function () {
                                                     <li>If the participating team does not show up at their allocated time then the team will be disqualified. In case of unavoidable circumstances please contact the organizers. The participation fee will not be refunded under any circumstances.</li>\
                                                     <li>Decisions made by the organizers and judges will be binding and final.</li>\
                                                 </ol>\
+                                                </div>\
                                                 </div></a>\
                                         </ul>\
                                     </div>\

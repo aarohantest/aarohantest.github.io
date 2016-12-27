@@ -260,6 +260,22 @@ $(document).ready(function () {
                                                     <a id='reg_button' href='registration.html' style='cursor: pointer' target='_blank'><img src='images/register_button.png'></a>\
                                                     <p id='head'>Prize</p><p>Winner-Cash Prize of Rs.3,000</p>\
                                                     <p id='head'>Entry fee</p><p>Rs.100</p>\
+                                                    <p id='head'>Rules</p>\
+                                                    <ol>\
+                                                        <li>The time limit for the performance, from empty stage to empty stage, is 6 minutes (5 mins performance time).</li>\
+                                                        <li>This event consists of one round.</li>\
+                                                        <li>Participants have to perform a script or passage of their choice.</li>\
+                                                        <li>The script should be submitted for censoring 5 days before the event at aarohan.competitions@gmail.com with subject “&lt;Name&gt;: Spotlight script”.</li>\
+                                                        <li>Act should be in Hindi, Marathi or English.</li>\
+                                                        <li>Participants would be provided with a chair and table.</li>\
+                                                        <li>Individual properties are allowed but the organisers hold the discretion of allowing its inclusion on stage.</li>\
+                                                        <li>The performance will be judged purely on acting, so no music will be allowed. Basic lights may be provided.</li>\
+                                                        <li>Participant exceeding 5 minutes will lose all the points allocated for the time criteria and any other points lost will be by the discretion of the judges.</li>\
+                                                        <li>In case your performance is interrupted due to any commotion caused in the performance area or any audio/light related problem then the team will be allowed to restart or continue the performance based on their preference.</li>\
+                                                        <li>Due to any unforeseeable event, if the participating team has to stop their performance, any one of the team members can signal a person from the organising team. Restarting, continuing or terminating the performance will then be by the judge&#39;s discretion.</li>\
+                                                        <li>If the participating team does not show up at their allocated time then the team will be disqualified. In case of unavoidable circumstances please contact the organizers. The participation fee will not be refunded under any circumstances.</li>\
+                                                        <li>Decisions made by the organizers and judges will be binding and final.</li>\
+                                                    </ol>\
                                                 </div>\
                                                 </div></a>\
                                             <a  class='platform'><div><span id='head'>PLatform</span><p style='text-align: center'>Talent hunt competition</p></div>\

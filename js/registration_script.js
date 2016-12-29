@@ -48,6 +48,31 @@ $(document).ready(function () {
             e.preventDefault();
         }
     });
+    $("#submit").click(function() {
+        var name = $("#reg_name").val();
+        var email = $("#reg_email").val();
+        var phone = $("#reg_phone").val();
+        var choice = $("#competitionslist").val();
+        // $("#returnmessage").empty(); // To empty previous error/success message.
+        // Checking for blank fields.
+        if (name == '' || email == '' || phone == '' || choice == '' || phone.length != 10) {
+            alert("Please all the Fields");
+        } else {
+            // Returns successful data submission message when the entered information is sent.
+            $.post("contact_reg.php", {
+                name1: name,
+                email1: email,
+                phone1: phone,
+                choice1: choice
+            }, function(data) {
+                // $("#returnmessage").append(data); // Append returned message to message paragraph.
+                if (data == "Message sent Successfully") {
+                    alert("Your application has been received, We will contact you soon.");
+                    $("#form")[0].reset(); // To reset form fields on success.
+                }
+            });
+        }
+    });
 });
 $(window).load(function () {
     $(".preloader").delay(2000).fadeOut("slow");

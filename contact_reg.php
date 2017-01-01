@@ -1,7 +1,7 @@
 <?php
 if(!$_POST) exit;
 
-    $to 	  = 'aarohan.gcharnalia@gmail.com'; #Replace your email id...
+    $to 	  = 'aarohan.query@gmail.com'; #Replace your email id...
     $name = trim($_POST['name1']);
     $email = trim($_POST['email1']);
     $phone = trim($_POST['phone1']);

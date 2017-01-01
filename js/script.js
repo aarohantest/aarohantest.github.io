@@ -53,7 +53,7 @@ $(document).ready(function () {
         var hours = Math.floor(minutes/60);
         var days = Math.floor(hours/24);
 
-        seconds%=60; //Calculating remaining seconds
+        //seconds%=60; //Calculating remaining seconds
 
         seconds = (seconds<10) ? "0" + seconds : seconds;
         hours = (hours<10) ? "0" + hours : hours;
@@ -71,6 +71,13 @@ $(document).ready(function () {
         setTimeout(countdown, 1000);
     }
     countdown();
+
+    function blinker() {
+        $('#blinking_text #blinker').fadeOut(200);
+	    $('#blinking_text #blinker').fadeIn(200);
+    }
+    setInterval(blinker, 1000);
+
     var $firstLine = $('#first_line');
     var $secondLine = $('#second_line');
     var $secondLine = $('#third_line');
@@ -775,7 +782,7 @@ $(document).ready(function () {
             });
         }
     });
-    response();console.log(sizeCalcHeight());
+    response();
     function response() {
         if ($(window).width() >= 400 && $(window).width() <= 430) {
     		$('#name').css('top','1.8em');
